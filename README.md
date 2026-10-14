@@ -21,7 +21,7 @@ Pengaturan → Sistem → Bahasa → Keluaran text-to-speech → Mesin Google �
 |---|---|---|---|---|
 | Kana | 104 hiragana + 117 katakana (termasuk tenten & gabungan) | – | – | ✓ + mnemonik |
 | N5 | 79 | 717 | 38 pola | ✓ (kanji, kosakata, tata bahasa, 5 cerita) |
-| N4 | 166 | 665 | – | kanji ✓, kosakata Inggris |
+| N4 | 166 | 665 | 30 pola | kanji, tata bahasa & 2 cerita ✓, kosakata Inggris |
 | N3 | 367 | 2.139 | – | kanji ✓, kosakata Inggris |
 | N2 | 367 | 1.804 | – | Inggris |
 | N1 | 1.232 | 2.698 | – | Inggris |

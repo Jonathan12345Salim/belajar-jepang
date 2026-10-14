@@ -81,6 +81,10 @@ a {
   font-family: 'Noto Sans JP', 'Noto Sans CJK JP', 'Hiragino Sans', 'Yu Gothic', 'Meiryo', sans-serif;
 }
 
+ruby {
+  ruby-align: center;
+}
+
 ruby rt {
   font-size: 0.48em;
   color: var(--muted);

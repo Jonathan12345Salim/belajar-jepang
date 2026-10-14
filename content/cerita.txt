@@ -75,3 +75,29 @@ q: Minuman apa yang diminta A? | Teh | Kopi | *Air dingin
 q: Apakah di Indonesia ada musim dingin? | Ada | *Tidak ada | Kadang-kadang
 q: Apa yang dipakai karena cuaca dingin? | *Mantel tebal | Kemeja | Rok
 q: Apakah penulis suka musim dingin? | *Suka | Tidak suka | Tidak tahu
+
+## s4-01 | 4 | はじめての アルバイト | Kerja paruh waktu pertama
+{先月|せんげつ}から、 {駅|えき} +の {近|ちか}く +の コンビニ +で アルバイト +を して います。 || Sejak bulan lalu, saya kerja paruh waktu di minimarket dekat stasiun.
+{最初|さいしょ} +は {日本語|にほんご} +が よく {分|わ}からなかった +ので、 {大変|たいへん} +でした。 || Awalnya saya tidak begitu paham bahasa Jepang, jadi berat sekali.
+でも、 {店長|てんちょう} +が {優|やさ}しく {教|おし}えて くれました。 || Tapi manajer toko dengan baik hati mengajari saya.
+{今|いま} +は お{客|きゃく}さん +と {話|はな}せる よう +に なりました。 || Sekarang saya sudah bisa berbicara dengan pelanggan.
+{一度|いちど}、 お{釣|つ}り +を {間違|まちが}えて しまいました。 || Pernah sekali saya salah memberi uang kembalian.
+でも、 {店長|てんちょう} +は {大丈夫|だいじょうぶ}だ +と {言|い}って くれました。 || Tapi manajer berkata tidak apa-apa.
+アルバイト +の お{金|かね} +で、 {新|あたら}しい {自転車|じてんしゃ} +を {買|か}う つもり +です。 || Dengan uang hasil kerja, saya berencana membeli sepeda baru.
+{仕事|しごと} +は {大変|たいへん} +です +が、 {楽|たの}しい +です。 || Pekerjaannya berat, tetapi menyenangkan.
+q: Di mana penulis kerja paruh waktu? | Restoran | *Minimarket dekat stasiun | Hotel
+q: Siapa yang mengajari penulis? | Teman | *Manajer toko | Pelanggan
+q: Apa yang ingin dibeli dengan uang hasil kerjanya? | Kamera | Ponsel | *Sepeda baru
+
+## s4-02 | 4 | おまつりに いこう | Ayo ke festival
+@A {週末|しゅうまつ}、 {一緒|いっしょ} +に お{祭|まつ}り +に {行|い}かない？ || A: Akhir pekan ini, mau pergi ke festival bersama?
+@B いい +ね！ {行|い}きたい。 {何時|なんじ} +から？ || B: Boleh! Aku mau. Mulai jam berapa?
+@A {夕方|ゆうがた} {六時|ろくじ} +から +だ +よ。 {浴衣|ゆかた} +を {着|き}て {行|い}こう +よ。 || A: Mulai jam enam sore. Ayo pergi pakai yukata.
+@B {浴衣|ゆかた} +を {着|き}た こと +が ない +けど、 {大丈夫|だいじょうぶ}？ || B: Aku belum pernah pakai yukata, tidak apa-apa?
+@A {大丈夫|だいじょうぶ}。 {私|わたし} +が {手伝|てつだ}って あげる +よ。 || A: Tidak apa-apa. Nanti aku bantu.
+@B ありがとう。 お{祭|まつ}り +で {何|なに} +を する +の？ || B: Terima kasih. Di festival kita ngapain?
+@A {屋台|やたい} +で {焼|や}きそば +を {食|た}べたり、 {花火|はなび} +を {見|み}たり する +よ。 || A: Makan yakisoba di kios, menonton kembang api, dan lain-lain.
+@B {楽|たの}しそう！ {雨|あめ} +が {降|ふ}らなければ いい +ね。 || B: Kedengarannya seru! Semoga tidak hujan, ya.
+q: Festival mulai jam berapa? | Jam 5 sore | *Jam 6 sore | Jam 7 malam
+q: Apa yang akan mereka pakai? | Jas | *Yukata | Seragam sekolah
+q: Apa yang diharapkan B di akhir percakapan? | Tidak terlambat | *Tidak hujan | Dapat hadiah
