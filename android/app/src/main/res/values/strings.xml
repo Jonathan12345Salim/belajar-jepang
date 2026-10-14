@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Belajar Jepang</string>
+    <string name="title_activity_main">Belajar Jepang</string>
+    <string name="package_name">id.jonathansalim.belajarjepang</string>
+    <string name="custom_url_scheme">id.jonathansalim.belajarjepang</string>
+</resources>

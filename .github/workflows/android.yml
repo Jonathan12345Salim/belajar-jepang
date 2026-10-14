@@ -1,0 +1,72 @@
+name: Build APK Android
+
+on:
+  push:
+    branches: ['**']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: apk-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      VERSION_CODE: ${{ github.run_number }}
+      VERSION_NAME: 1.0.${{ github.run_number }}
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+
+      - uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - name: Pasang dependensi
+        run: npm ci
+
+      - name: Build aplikasi web
+        run: npm run build
+
+      - name: Salin ke proyek Android
+        run: npx cap sync android
+
+      - name: Build APK
+        working-directory: android
+        run: |
+          chmod +x gradlew
+          ./gradlew assembleRelease --no-daemon --stacktrace
+
+      - name: Beri nama file APK
+        run: cp android/app/build/outputs/apk/release/app-release.apk "BelajarJepang-${VERSION_NAME}.apk"
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: BelajarJepang-${{ env.VERSION_NAME }}
+          path: BelajarJepang-*.apk
+
+      - name: Terbitkan rilis
+        uses: softprops/action-gh-release@v3
+        with:
+          tag_name: v${{ env.VERSION_NAME }}
+          name: Belajar Jepang ${{ env.VERSION_NAME }}
+          target_commitish: ${{ github.sha }}
+          make_latest: true
+          files: BelajarJepang-*.apk
+          body: |
+            APK aplikasi Belajar Jepang (build dari branch `${{ github.ref_name }}`, commit ${{ github.sha }}).
+
+            **Cara pasang di HP Android:**
+            1. Unduh file `BelajarJepang-${{ env.VERSION_NAME }}.apk` di bagian **Assets** di bawah.
+            2. Buka file yang sudah diunduh. Jika muncul peringatan, izinkan "Instal aplikasi tidak dikenal" untuk browser/file manager yang dipakai.
+            3. Ketuk **Instal**. Versi baru bisa langsung dipasang di atas versi lama tanpa kehilangan progres.

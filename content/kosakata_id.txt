@@ -1,0 +1,762 @@
+# Terjemahan Indonesia kosakata JLPT + kategori.
+# Format: kata|bacaan|arti Indonesia|kategori|(opsional) bentuk tulisan yang dikoreksi
+# Urutan baris di dalam kategori = urutan belajar di Jalur Belajar.
+
+# ---------- N5: Salam & ungkapan
+はい|はい|ya; baik|sapa
+いいえ|いいえ|tidak; bukan|sapa
+ええ|ええ|ya (santai)|sapa
+どうぞ|どうぞ|silakan|sapa
+どうも|どうも|terima kasih; salam singkat|sapa
+もしもし|もしもし|halo (di telepon)|sapa
+下さい|ください|tolong (berikan/lakukan)|sapa
+大丈夫|だいじょうぶ|tidak apa-apa; baik-baik saja|sapa
+結構|けっこう|bagus sekali; cukup (tidak usah)|sapa
+そう|そう|begitu; ya, benar|sapa
+いかが|いかが|bagaimana (sopan)|sapa
+じゃ|じゃ|nah, kalau begitu|sapa
+では|では|kalau begitu; baiklah|sapa
+それでは|それでは|kalau begitu; baiklah|sapa
+さあ|さあ|ayo; nah; entahlah|sapa
+ああ|ああ|ah!; oh!|sapa
+
+# ---------- N5: Kata tanya & penunjuk
+これ|これ|ini (benda di dekat saya)|tanya
+それ|それ|itu (benda di dekat lawan bicara)|tanya
+あれ|あれ|itu (yang jauh di sana)|tanya
+どれ|どれ|yang mana|tanya
+この|この|... ini|tanya
+その|その|... itu|tanya
+あの|あの|... itu (yang jauh); anu...|tanya
+どの|どの|... yang mana|tanya
+ここ|ここ|sini; tempat ini|tanya
+そこ|そこ|situ; tempat itu|tanya
+あそこ|あそこ|sana; tempat yang jauh itu|tanya
+どこ|どこ|di mana; mana|tanya
+何|なん|apa|tanya
+誰|だれ|siapa|tanya
+どなた|どなた|siapa (sopan)|tanya
+いつ|いつ|kapan|tanya
+どう|どう|bagaimana|tanya
+どうして|どうして|mengapa; kenapa|tanya
+なぜ|なぜ|mengapa|tanya
+いくつ|いくつ|berapa (buah); umur berapa|tanya
+いくら|いくら|berapa (harga)|tanya
+どんな|どんな|seperti apa; macam apa|tanya
+こんな|こんな|seperti ini|tanya
+こちら|こちら|sebelah sini; ini (sopan)|tanya
+そちら|そちら|sebelah situ; Anda (sopan)|tanya
+あちら|あちら|sebelah sana (sopan)|tanya
+どちら|どちら|yang mana; ke mana (sopan)|tanya
+こっち|こっち|sini (santai)|tanya
+そっち|そっち|situ (santai)|tanya
+あっち|あっち|sana (santai)|tanya
+どっち|どっち|yang mana (santai)|tanya
+誰か|だれか|seseorang|tanya
+何～|なん～|berapa ~; ~ apa|tanya
+
+# ---------- N5: Angka & satuan
+一|いち|satu|angka
+二|に|dua|angka
+三|さん|tiga|angka
+四|し|empat|angka
+五|ご|lima|angka
+六|ろく|enam|angka
+七|しち|tujuh|angka
+八|はち|delapan|angka
+九|きゅう|sembilan|angka
+十|じゅう|sepuluh|angka
+九|く|sembilan (bacaan lain)|angka
+零|れい|nol|angka
+ゼロ|ゼロ|nol|angka
+百|ひゃく|seratus|angka
+千|せん|seribu|angka
+万|まん|sepuluh ribu|angka
+～円|～えん|~ yen|angka
+一つ|ひとつ|satu (buah)|angka
+二つ|ふたつ|dua (buah)|angka
+三つ|みっつ|tiga (buah)|angka
+四つ|よっつ|empat (buah)|angka
+五つ|いつつ|lima (buah)|angka
+六つ|むっつ|enam (buah)|angka
+七つ|ななつ|tujuh (buah)|angka
+八つ|やっつ|delapan (buah)|angka
+九つ|ここのつ|sembilan (buah)|angka
+十|とお|sepuluh (buah)|angka
+一人|ひとり|satu orang; sendirian|angka
+二人|ふたり|dua orang|angka
+～人|～にん|~ orang (penghitung orang)|angka
+～個|～こ|~ buah (benda kecil)|angka
+～本|～ほん|~ batang (benda panjang)|angka
+～枚|～まい|~ lembar (benda tipis)|angka
+～冊|～さつ|~ buah (buku)|angka
+～台|～だい|~ unit (kendaraan, mesin)|angka
+～匹|～ひき|~ ekor (hewan kecil)|angka
+～杯|～はい|~ gelas/mangkuk|angka
+～回|～かい|~ kali|angka
+～階|～かい|lantai ~|angka
+～度|～ど|~ kali; ~ derajat|angka
+～番|～ばん|nomor ~; ke-~|angka
+番号|ばんごう|nomor|angka
+～歳|～さい|~ tahun (umur)|angka
+二十歳|はたち|umur 20 tahun|angka
+半分|はんぶん|setengah; separuh|angka
+キロ|キロ|kilo (kilogram/kilometer)|angka
+グラム|グラム|gram|angka
+メートル|メートル|meter|angka
+～くらい|～くらい|kira-kira; sekitar|angka
+～ずつ|～ずつ|masing-masing ~; ~ demi ~|angka
+
+# ---------- N5: Orang & keluarga
+私|わたし|saya|org
+あなた|あなた|kamu; Anda|org
+人|ひと|orang|org
+～さん|～さん|Bapak/Ibu/Sdr. ~|org
+男|おとこ|laki-laki|org
+女|おんな|perempuan|org
+男の子|おとこのこ|anak laki-laki|org
+女の子|おんなのこ|anak perempuan|org
+子供|こども|anak-anak|org
+大人|おとな|orang dewasa|org
+友達|ともだち|teman|org
+先生|せんせい|guru; dokter|org
+学生|がくせい|mahasiswa; pelajar|org
+家族|かぞく|keluarga|org
+父|ちち|ayah (saya)|org
+母|はは|ibu (saya)|org
+お父さん|おとうさん|ayah (sopan; ayah orang lain)|org
+お母さん|おかあさん|ibu (sopan; ibu orang lain)|org
+両親|りょうしん|orang tua (ayah & ibu)|org
+兄|あに|kakak laki-laki (saya)|org
+姉|あね|kakak perempuan (saya)|org
+弟|おとうと|adik laki-laki|org
+妹|いもうと|adik perempuan|org
+お兄さん|おにいさん|kakak laki-laki (sopan)|org
+お姉さん|おねえさん|kakak perempuan (sopan)|org
+兄弟|きょうだい|saudara kandung|org
+おじいさん|おじいさん|kakek|org
+おばあさん|おばあさん|nenek|org
+伯父|おじさん|paman; om|org|伯父さん
+伯母さん|おばさん|bibi; tante|org
+奥さん|おくさん|istri (orang lain)|org
+皆さん|みなさん|semuanya; Anda sekalian|org
+みんな|みんな|semua orang|org
+自分|じぶん|diri sendiri|org
+～たち|～たち|para ~ (penanda jamak)|org
+～人|～じん|orang (negara) ~|org
+外国人|がいこくじん|orang asing|org
+生徒|せいと|murid (sekolah)|org
+留学生|りゅうがくせい|pelajar asing|org
+医者|いしゃ|dokter|org
+警官|けいかん|polisi|org
+おまわりさん|おまわりさん|pak polisi|org
+大勢|おおぜい|banyak orang|org
+方|かた|orang (sopan); cara|org
+私|わたくし|saya (sangat sopan)|org
+
+# ---------- N5: Waktu & kalender
+今|いま|sekarang|waktu
+今日|きょう|hari ini|waktu
+明日|あした|besok|waktu
+昨日|きのう|kemarin|waktu
+朝|あさ|pagi|waktu
+昼|ひる|siang|waktu
+晩|ばん|malam|waktu
+夜|よる|malam|waktu
+～時|～じ|jam ~ (pukul)|waktu
+～分|～ふん|~ menit|waktu
+半|はん|setengah; ...-an (jam setengah)|waktu
+午前|ごぜん|pagi; A.M. (sebelum jam 12)|waktu
+午後|ごご|siang/sore; P.M.|waktu
+時間|じかん|waktu|waktu
+～時間|～じかん|~ jam (lamanya)|waktu
+毎日|まいにち|setiap hari|waktu
+毎朝|まいあさ|setiap pagi|waktu
+毎晩|まいばん|setiap malam|waktu
+月曜日|げつようび|hari Senin|waktu
+火曜日|かようび|hari Selasa|waktu
+水曜日|すいようび|hari Rabu|waktu
+木曜日|もくようび|hari Kamis|waktu
+金曜日|きんようび|hari Jumat|waktu
+土曜日|どようび|hari Sabtu|waktu
+日曜日|にちようび|hari Minggu|waktu
+～月|～がつ|bulan ~ (nama bulan)|waktu
+～日|～にち|tanggal ~; ~ hari|waktu
+一日|ついたち|tanggal 1|waktu
+二日|ふつか|tanggal 2; dua hari|waktu
+三日|みっか|tanggal 3; tiga hari|waktu
+四日|よっか|tanggal 4; empat hari|waktu
+五日|いつか|tanggal 5; lima hari|waktu
+六日|むいか|tanggal 6; enam hari|waktu
+七日|なのか|tanggal 7; tujuh hari|waktu
+八日|ようか|tanggal 8; delapan hari|waktu
+九日|ここのか|tanggal 9; sembilan hari|waktu
+十日|とおか|tanggal 10; sepuluh hari|waktu
+二十日|はつか|tanggal 20; dua puluh hari|waktu
+一日|いちにち|satu hari (sehari)|waktu
+～年|～ねん|~ tahun|waktu
+年|とし|tahun; umur|waktu
+今年|ことし|tahun ini|waktu
+去年|きょねん|tahun lalu|waktu
+来年|らいねん|tahun depan|waktu
+今月|こんげつ|bulan ini|waktu
+先月|せんげつ|bulan lalu|waktu
+来月|らいげつ|bulan depan|waktu
+今週|こんしゅう|minggu ini|waktu
+先週|せんしゅう|minggu lalu|waktu
+来週|らいしゅう|minggu depan|waktu
+毎週|まいしゅう|setiap minggu|waktu
+毎月|まいげつ|setiap bulan|waktu
+毎年|まいねん|setiap tahun|waktu
+明後日|あさって|lusa|waktu
+一昨日|おととい|kemarin lusa|waktu
+おととし|おととし|dua tahun lalu|waktu
+さ来年|さらいねん|dua tahun lagi|waktu
+今朝|けさ|tadi pagi; pagi ini|waktu
+今晩|こんばん|malam ini|waktu
+昨夜|ゆうべ|tadi malam; semalam|waktu
+夕方|ゆうがた|sore hari|waktu
+誕生日|たんじょうび|hari ulang tahun|waktu
+休み|やすみ|libur; istirahat|waktu
+夏休み|なつやすみ|libur musim panas|waktu
+～週間|～しゅうかん|~ minggu (lamanya)|waktu
+～か月|～かげつ|~ bulan (lamanya)|waktu
+一月|ひとつき|satu bulan (lamanya)|waktu
+～ころ|～ころ|sekitar (waktu)|waktu
+～すぎ|～すぎ|lewat ~; terlalu ~|waktu
+～前|～まえ|~ yang lalu; sebelum ~|waktu
+～時|～とき|waktu ~; ketika ~|waktu
+後|あと|setelah; nanti|waktu
+先|さき|depan; lebih dulu|waktu
+～中|～じゅう|sepanjang ~ (seluruh)|waktu
+～中|～ちゅう|sedang ~|waktu
+
+# ---------- N5: Kata kerja
+する|する|melakukan; memakai (aksesori)|kk
+行く|いく|pergi|kk
+来る|くる|datang|kk
+帰る|かえる|pulang|kk
+食べる|たべる|makan|kk
+飲む|のむ|minum|kk
+見る|みる|melihat; menonton|kk
+聞く|きく|mendengar; bertanya|kk
+読む|よむ|membaca|kk
+書く|かく|menulis|kk
+話す|はなす|berbicara|kk
+言う|いう|berkata|kk
+分かる|わかる|mengerti|kk
+有る|ある|ada; punya (benda)|kk
+在る|ある|ada; berada (benda)|kk
+居る|いる|ada; berada (makhluk hidup)|kk
+買う|かう|membeli|kk
+売る|うる|menjual|kk
+起きる|おきる|bangun (tidur); terjadi|kk
+寝る|ねる|tidur|kk
+会う|あう|bertemu|kk
+待つ|まつ|menunggu|kk
+休む|やすむ|beristirahat; libur|kk
+働く|はたらく|bekerja|kk
+習う|ならう|belajar (dari seseorang)|kk
+教える|おしえる|mengajar; memberi tahu|kk
+覚える|おぼえる|mengingat; menghafal|kk
+忘れる|わすれる|lupa|kk
+知る|しる|tahu; kenal|kk
+入る|はいる|masuk|kk
+出る|でる|keluar; berangkat|kk
+出かける|でかける|pergi keluar|kk
+着く|つく|tiba; sampai|kk
+乗る|のる|naik (kendaraan)|kk
+降りる|おりる|turun (dari kendaraan)|kk
+歩く|あるく|berjalan kaki|kk
+走る|はしる|berlari|kk
+泳ぐ|およぐ|berenang|kk
+遊ぶ|あそぶ|bermain|kk
+歌う|うたう|bernyanyi|kk
+住む|すむ|tinggal (di)|kk
+作る|つくる|membuat|kk
+使う|つかう|menggunakan|kk
+持つ|もつ|memegang; membawa; punya|kk
+取る|とる|mengambil|kk
+撮る|とる|memotret|kk
+貸す|かす|meminjamkan|kk
+借りる|かりる|meminjam|kk
+返す|かえす|mengembalikan|kk
+上げる|あげる|memberi; menaikkan|kk
+やる|やる|melakukan; memberi (ke hewan/adik)|kk
+頼む|たのむ|meminta (tolong)|kk
+答える|こたえる|menjawab|kk
+呼ぶ|よぶ|memanggil; mengundang|kk
+見せる|みせる|memperlihatkan|kk
+開く|あく|terbuka|kk
+開ける|あける|membuka|kk
+閉まる|しまる|tertutup|kk
+閉める|しめる|menutup|kk
+始まる|はじまる|dimulai|kk
+終る|おわる|selesai; berakhir|kk|終わる
+立つ|たつ|berdiri|kk
+座る|すわる|duduk|kk
+置く|おく|menaruh; meletakkan|kk
+入れる|いれる|memasukkan|kk
+出す|だす|mengeluarkan; mengirim|kk
+着る|きる|memakai (baju atasan)|kk
+はく|はく|memakai (celana, rok, sepatu)|kk
+かぶる|かぶる|memakai (topi)|kk
+脱ぐ|ぬぐ|melepas (pakaian)|kk
+締める|しめる|mengikat; mengencangkan|kk
+洗う|あらう|mencuci|kk
+浴びる|あびる|mandi (siraman); bermandikan|kk
+磨く|みがく|menggosok (gigi); memoles|kk
+切る|きる|memotong; menutup (telepon)|kk
+消す|けす|mematikan; menghapus|kk
+つける|つける|menyalakan|kk
+消える|きえる|padam; hilang|kk
+掛ける|かける|menggantung; memakai (kacamata)|kk
+かける|かける|menelepon; duduk|kk
+かかる|かかる|memakan (waktu/biaya)|kk
+できる|できる|bisa; dapat|kk
+なる|なる|menjadi|kk
+困る|こまる|kesulitan; bingung|kk
+違う|ちがう|berbeda; salah|kk
+疲れる|つかれる|lelah; capek|kk
+勤める|つとめる|bekerja (di suatu tempat)|kk
+曲る|まがる|belok|kk|曲がる
+渡る|わたる|menyeberang|kk
+渡す|わたす|menyerahkan|kk
+並ぶ|ならぶ|berbaris; berjajar|kk
+並べる|ならべる|menjajarkan; menyusun|kk
+押す|おす|menekan; mendorong|kk
+引く|ひく|menarik|kk
+弾く|ひく|memainkan (alat musik)|kk
+吹く|ふく|bertiup; meniup|kk
+降る|ふる|turun (hujan/salju)|kk
+晴れる|はれる|menjadi cerah|kk
+曇る|くもる|menjadi mendung|kk
+咲く|さく|mekar|kk
+鳴く|なく|berbunyi (hewan); berkicau|kk
+飛ぶ|とぶ|terbang|kk
+止まる|とまる|berhenti|kk
+登る|のぼる|mendaki|kk
+生まれる|うまれる|lahir|kk
+死ぬ|しぬ|mati; meninggal|kk
+無くす|なくす|menghilangkan|kk
+吸う|すう|menghisap; menghirup|kk
+差す|さす|membuka (payung)|kk
+貼る|はる|menempel|kk
+要る|いる|perlu; butuh|kk
+
+# ---------- N5: Kata sifat -i
+いい|いい|baik; bagus|ksi
+悪い|わるい|buruk; jelek|ksi
+大きい|おおきい|besar|ksi
+小さい|ちいさい|kecil|ksi
+新しい|あたらしい|baru|ksi
+古い|ふるい|lama; tua (benda)|ksi
+高い|たかい|tinggi; mahal|ksi
+安い|やすい|murah|ksi
+低い|ひくい|rendah; pendek|ksi
+長い|ながい|panjang|ksi
+短い|みじかい|pendek|ksi
+多い|おおい|banyak|ksi
+少ない|すくない|sedikit|ksi
+早い|はやい|awal; pagi-pagi|ksi
+速い|はやい|cepat|ksi
+遅い|おそい|lambat; terlambat|ksi
+暑い|あつい|panas (cuaca)|ksi
+寒い|さむい|dingin (cuaca)|ksi
+熱い|あつい|panas (benda)|ksi
+冷たい|つめたい|dingin (benda)|ksi
+暖かい|あたたかい|hangat|ksi
+涼しい|すずしい|sejuk|ksi
+温い|ぬるい|suam-suam kuku|ksi
+美味しい|おいしい|enak; lezat|ksi
+まずい|まずい|tidak enak|ksi
+甘い|あまい|manis|ksi
+辛い|からい|pedas|ksi
+楽しい|たのしい|menyenangkan|ksi
+面白い|おもしろい|menarik; lucu|ksi
+つまらない|つまらない|membosankan|ksi
+難しい|むずかしい|sulit|ksi
+易しい|やさしい|mudah|ksi
+忙しい|いそがしい|sibuk|ksi
+痛い|いたい|sakit (nyeri)|ksi
+近い|ちかい|dekat|ksi
+遠い|とおい|jauh|ksi
+広い|ひろい|luas; lebar|ksi
+狭い|せまい|sempit|ksi
+明るい|あかるい|terang; ceria|ksi
+暗い|くらい|gelap|ksi
+重い|おもい|berat|ksi
+軽い|かるい|ringan|ksi
+強い|つよい|kuat|ksi
+弱い|よわい|lemah|ksi
+厚い|あつい|tebal|ksi
+薄い|うすい|tipis|ksi
+太い|ふとい|gemuk; tebal|ksi
+細い|ほそい|kurus; ramping|ksi
+丸い|まるい|bulat|ksi
+若い|わかい|muda|ksi
+汚い|きたない|kotor|ksi
+危ない|あぶない|berbahaya|ksi
+可愛い|かわいい|imut; menggemaskan|ksi
+うるさい|うるさい|berisik|ksi
+欲しい|ほしい|ingin (memiliki)|ksi
+ない|ない|tidak ada|ksi
+大きな|おおきな|besar (di depan kata benda)|ksi
+小さな|ちいさな|kecil (di depan kata benda)|ksi
+
+# ---------- N5: Kata sifat -na
+好き|すき|suka|ksna
+嫌い|きらい|tidak suka; benci|ksna
+大好き|だいすき|sangat suka|ksna
+上手|じょうず|pandai; mahir|ksna
+下手|へた|tidak pandai|ksna
+綺麗|きれい|cantik; bersih|ksna
+静か|しずか|tenang; sepi|ksna
+にぎやか|にぎやか|ramai|ksna
+有名|ゆうめい|terkenal|ksna
+便利|べんり|praktis; berguna|ksna
+大切|たいせつ|penting; berharga|ksna
+大変|たいへん|berat; repot; sangat|ksna
+元気|げんき|sehat; bersemangat|ksna
+暇|ひま|senggang; waktu luang|ksna
+丈夫|じょうぶ|kuat; awet|ksna
+同じ|おなじ|sama|ksna
+嫌|いや|tidak mau; tidak suka|ksna
+りっぱ|りっぱ|hebat; megah|ksna
+本当|ほんとう|benar; sungguh|ksna
+色々|いろいろ|bermacam-macam|ksna
+一緒|いっしょ|bersama|ksna
+
+# ---------- N5: Makanan & minuman
+御飯|ごはん|nasi; makanan|makan
+朝御飯|あさごはん|sarapan|makan
+昼御飯|ひるごはん|makan siang|makan
+晩御飯|ばんごはん|makan malam|makan
+夕飯|ゆうはん|makan malam|makan
+食べ物|たべもの|makanan|makan
+飲み物|のみもの|minuman|makan
+水|みず|air|makan
+お茶|おちゃ|teh (hijau)|makan
+紅茶|こうちゃ|teh hitam|makan
+コーヒー|コーヒー|kopi|makan
+牛乳|ぎゅうにゅう|susu (sapi)|makan
+お酒|おさけ|sake; minuman beralkohol|makan
+肉|にく|daging|makan
+牛肉|ぎゅうにく|daging sapi|makan
+鶏肉|とりにく|daging ayam|makan
+豚肉|ぶたにく|daging babi|makan
+魚|さかな|ikan|makan
+卵|たまご|telur|makan
+野菜|やさい|sayur|makan
+果物|くだもの|buah-buahan|makan
+パン|パン|roti|makan
+バター|バター|mentega|makan
+カレー|カレー|kari|makan
+お菓子|おかし|kue; camilan|makan
+飴|あめ|permen|makan
+砂糖|さとう|gula|makan
+塩|しお|garam|makan
+醤油|しょうゆ|kecap asin (shoyu)|makan
+お弁当|おべんとう|bekal makanan (bento)|makan
+料理|りょうり|masakan; memasak|makan
+お皿|おさら|piring|makan
+茶碗|ちゃわん|mangkuk nasi|makan
+箸|はし|sumpit|makan
+スプーン|スプーン|sendok|makan
+フォーク|フォーク|garpu|makan
+ナイフ|ナイフ|pisau|makan
+コップ|コップ|gelas|makan
+カップ|カップ|cangkir|makan
+
+# ---------- N5: Tempat & kota
+家|いえ|rumah|kota
+うち|うち|rumah; rumah saya|kota
+駅|えき|stasiun|kota
+学校|がっこう|sekolah|kota
+大学|だいがく|universitas|kota
+会社|かいしゃ|perusahaan; kantor|kota
+病院|びょういん|rumah sakit|kota
+銀行|ぎんこう|bank|kota
+店|みせ|toko|kota
+レストラン|レストラン|restoran|kota
+喫茶店|きっさてん|kafe; kedai kopi|kota
+食堂|しょくどう|kantin; ruang makan|kota
+デパート|デパート|toserba (department store)|kota
+郵便局|ゆうびんきょく|kantor pos|kota
+図書館|としょかん|perpustakaan|kota
+公園|こうえん|taman|kota
+ホテル|ホテル|hotel|kota
+映画館|えいがかん|bioskop|kota
+大使館|たいしかん|kedutaan besar|kota
+交番|こうばん|pos polisi|kota
+八百屋|やおや|toko sayur|kota
+～屋|～や|toko ~; penjual ~|kota
+町|まち|kota (kecil)|kota
+村|むら|desa|kota
+国|くに|negara; kampung halaman|kota
+外国|がいこく|luar negeri|kota
+道|みち|jalan|kota
+橋|はし|jembatan|kota
+交差点|こうさてん|perempatan|kota
+角|かど|sudut; tikungan|kota
+建物|たてもの|bangunan; gedung|kota
+アパート|アパート|apartemen|kota
+プール|プール|kolam renang|kota
+ポスト|ポスト|kotak pos|kota
+所|ところ|tempat|kota
+池|いけ|kolam|kota
+入口|いりぐち|pintu masuk|kota
+出口|でぐち|pintu keluar|kota
+地図|ちず|peta|kota
+
+# ---------- N5: Arah & posisi
+上|うえ|atas|arah
+下|した|bawah|arah
+前|まえ|depan; sebelum|arah
+後ろ|うしろ|belakang|arah
+右|みぎ|kanan|arah
+左|ひだり|kiri|arah
+中|なか|dalam; tengah|arah
+外|そと|luar|arah
+隣|となり|sebelah|arah
+横|よこ|samping|arah
+そば|そば|dekat; di samping|arah
+近く|ちかく|dekat; sekitar|arah
+向こう|むこう|seberang; sana|arah
+東|ひがし|timur|arah
+西|にし|barat|arah
+南|みなみ|selatan|arah
+北|きた|utara|arah
+辺|へん|sekitar; daerah|arah
+～側|～がわ|sisi ~|arah
+たて|たて|panjang; vertikal|arah
+
+# ---------- N5: Rumah & barang
+部屋|へや|kamar; ruangan|rumah
+台所|だいどころ|dapur|rumah
+お風呂|おふろ|bak mandi; mandi berendam|rumah
+シャワー|シャワー|pancuran (shower)|rumah
+トイレ|トイレ|toilet|rumah
+お手洗い|おてあらい|toilet; kamar kecil|rumah
+玄関|げんかん|pintu depan; serambi masuk|rumah
+廊下|ろうか|lorong|rumah
+階段|かいだん|tangga|rumah
+窓|まど|jendela|rumah
+ドア|ドア|pintu|rumah
+戸|と|pintu (gaya Jepang)|rumah
+門|もん|gerbang|rumah
+庭|にわ|halaman; kebun|rumah
+家庭|かてい|rumah tangga; keluarga|rumah
+机|つくえ|meja (belajar)|rumah
+椅子|いす|kursi|rumah
+テーブル|テーブル|meja|rumah
+ベッド|ベッド|tempat tidur|rumah
+本棚|ほんだな|rak buku|rumah
+冷蔵庫|れいぞうこ|kulkas|rumah
+ストーブ|ストーブ|pemanas ruangan|rumah
+テレビ|テレビ|televisi|rumah
+ラジオ|ラジオ|radio|rumah
+電気|でんき|listrik; lampu|rumah
+電話|でんわ|telepon|rumah
+時計|とけい|jam (dinding/tangan)|rumah
+カメラ|カメラ|kamera|rumah
+写真|しゃしん|foto|rumah
+お金|おかね|uang|rumah
+財布|さいふ|dompet|rumah
+かばん|かばん|tas|rumah
+鍵|かぎ|kunci|rumah
+傘|かさ|payung|rumah
+箱|はこ|kotak|rumah
+物|もの|benda; barang|rumah
+荷物|にもつ|barang bawaan|rumah
+花瓶|かびん|vas bunga|rumah
+石鹸|せっけん|sabun|rumah
+ボタン|ボタン|tombol; kancing|rumah
+カレンダー|カレンダー|kalender|rumah
+エレベーター|エレベーター|lift|rumah
+たばこ|たばこ|rokok|rumah
+灰皿|はいざら|asbak|rumah
+マッチ|マッチ|korek api|rumah
+フィルム|フィルム|film (rol kamera)|rumah
+テープ|テープ|pita; kaset|rumah
+テープレコーダー|テープレコーダー|perekam kaset|rumah
+ラジオカセ|ラジオカセ|radio kaset|rumah
+レコード|レコード|piringan hitam|rumah
+
+# ---------- N5: Sekolah & pekerjaan
+本|ほん|buku|sekolah
+勉強|べんきょう|belajar|sekolah
+仕事|しごと|pekerjaan|sekolah
+名前|なまえ|nama|sekolah
+言葉|ことば|kata; bahasa|sekolah
+～語|～ご|bahasa ~|sekolah
+英語|えいご|bahasa Inggris|sekolah
+平仮名|ひらがな|hiragana|sekolah
+片仮名|かたかな|katakana|sekolah
+漢字|かんじ|kanji|sekolah
+意味|いみ|arti; makna|sekolah
+辞書|じしょ|kamus|sekolah
+字引|じびき|kamus|sekolah
+ノート|ノート|buku catatan|sekolah
+鉛筆|えんぴつ|pensil|sekolah
+ペン|ペン|pena|sekolah
+ボールペン|ボールペン|pulpen|sekolah
+万年筆|まんねんひつ|pena tinta|sekolah
+紙|かみ|kertas|sekolah
+教室|きょうしつ|ruang kelas|sekolah
+クラス|クラス|kelas|sekolah
+授業|じゅぎょう|pelajaran (di kelas)|sekolah
+宿題|しゅくだい|PR; pekerjaan rumah|sekolah
+テスト|テスト|tes; ujian|sekolah
+問題|もんだい|soal; masalah|sekolah
+質問|しつもん|pertanyaan|sekolah
+練習|れんしゅう|latihan; berlatih|sekolah
+作文|さくぶん|karangan|sekolah
+文章|ぶんしょう|kalimat; tulisan|sekolah
+ページ|ページ|halaman|sekolah
+話|はなし|cerita; pembicaraan|sekolah
+新聞|しんぶん|koran|sekolah
+雑誌|ざっし|majalah|sekolah
+ニュース|ニュース|berita|sekolah
+手紙|てがみ|surat|sekolah
+葉書|はがき|kartu pos|sekolah
+封筒|ふうとう|amplop|sekolah
+切手|きって|perangko|sekolah
+コピーする|コピーする|memfotokopi|sekolah
+
+# ---------- N5: Transportasi
+車|くるま|mobil|trans
+電車|でんしゃ|kereta listrik|trans
+バス|バス|bus|trans
+自転車|じてんしゃ|sepeda|trans
+地下鉄|ちかてつ|kereta bawah tanah|trans
+タクシー|タクシー|taksi|trans
+飛行機|ひこうき|pesawat terbang|trans
+自動車|じどうしゃ|mobil; kendaraan bermotor|trans
+切符|きっぷ|tiket; karcis|trans
+
+# ---------- N5: Tubuh & kesehatan
+体|からだ|badan; tubuh|tubuh
+頭|あたま|kepala|tubuh
+顔|かお|wajah|tubuh
+目|め|mata|tubuh
+耳|みみ|telinga|tubuh
+鼻|はな|hidung|tubuh
+口|くち|mulut|tubuh
+歯|は|gigi|tubuh
+手|て|tangan|tubuh
+足|あし|kaki|tubuh
+お腹|おなか|perut|tubuh
+背|せい|tinggi badan|tubuh
+声|こえ|suara (manusia)|tubuh
+病気|びょうき|sakit; penyakit|tubuh
+風邪|かぜ|flu; masuk angin|tubuh
+薬|くすり|obat|tubuh
+
+# ---------- N5: Alam, cuaca & hewan
+天気|てんき|cuaca|alam
+雨|あめ|hujan|alam
+雪|ゆき|salju|alam
+風|かぜ|angin|alam
+晴れ|はれ|cerah|alam
+曇り|くもり|mendung|alam
+空|そら|langit|alam
+山|やま|gunung|alam
+川|かわ|sungai|alam
+海|うみ|laut|alam
+木|き|pohon; kayu|alam
+花|はな|bunga|alam
+春|はる|musim semi|alam
+夏|なつ|musim panas|alam
+秋|あき|musim gugur|alam
+冬|ふゆ|musim dingin|alam
+動物|どうぶつ|hewan|alam
+犬|いぬ|anjing|alam
+猫|ねこ|kucing|alam
+鳥|とり|burung; ayam|alam
+ペット|ペット|hewan peliharaan|alam
+
+# ---------- N5: Pakaian
+服|ふく|pakaian; baju|baju
+洋服|ようふく|pakaian (gaya Barat)|baju
+シャツ|シャツ|kemeja; kaus|baju
+ワイシャツ|ワイシャツ|kemeja kerja|baju
+セーター|セーター|sweter|baju
+上着|うわぎ|jaket; mantel|baju
+コート|コート|mantel; lapangan (tenis)|baju
+背広|せびろ|jas pria|baju
+ネクタイ|ネクタイ|dasi|baju
+スカート|スカート|rok|baju
+ズボン|ズボン|celana panjang|baju
+靴|くつ|sepatu|baju
+靴下|くつした|kaus kaki|baju
+帽子|ぼうし|topi|baju
+眼鏡|めがね|kacamata|baju
+ハンカチ|ハンカチ|sapu tangan|baju
+ポケット|ポケット|saku|baju
+
+# ---------- N5: Hobi & kegiatan
+音楽|おんがく|musik|hobi
+歌|うた|lagu|hobi
+映画|えいが|film|hobi
+絵|え|gambar; lukisan|hobi
+ギター|ギター|gitar|hobi
+スポーツ|スポーツ|olahraga|hobi
+パーティー|パーティー|pesta|hobi
+旅行|りょこう|perjalanan; wisata|hobi
+散歩|さんぽ|jalan-jalan santai|hobi
+買い物|かいもの|belanja|hobi
+洗濯|せんたく|mencuci (pakaian)|hobi
+掃除|そうじ|bersih-bersih|hobi
+結婚|けっこん|pernikahan; menikah|hobi
+
+# ---------- N5: Warna
+色|いろ|warna|warna
+赤|あか|merah|warna
+赤い|あかい|merah|warna
+青|あお|biru|warna
+青い|あおい|biru|warna
+白|しろ|putih|warna
+白い|しろい|putih|warna
+黒|くろ|hitam|warna
+黒い|くろい|hitam; gelap|warna
+黄色|きいろ|kuning|warna
+黄色い|きいろい|kuning|warna
+茶色|ちゃいろ|cokelat|warna
+緑|みどり|hijau|warna
+
+# ---------- N5: Kata keterangan & sambung
+とても|とても|sangat|kket
+よく|よく|sering; dengan baik|kket
+もう|もう|sudah; lagi|kket
+まだ|まだ|masih; belum|kket
+また|また|lagi; juga|kket
+もっと|もっと|lebih|kket
+一番|いちばん|paling; nomor satu|kket
+いつも|いつも|selalu|kket
+時々|ときどき|kadang-kadang|kket
+すぐに|すぐに|segera|kket
+ちょっと|ちょっと|sebentar; sedikit|kket
+少し|すこし|sedikit|kket
+沢山|たくさん|banyak|kket
+全部|ぜんぶ|semua|kket
+多分|たぶん|mungkin|kket
+余り|あまり|tidak begitu (+ negatif); sisa|kket
+丁度|ちょうど|tepat; pas|kket
+段々|だんだん|lambat laun|kket
+ゆっくりと|ゆっくりと|pelan-pelan|kket
+まっすぐ|まっすぐ|lurus|kket
+初めて|はじめて|pertama kali|kket
+初め|はじめ|awal; permulaan|kket
+次|つぎ|berikutnya|kket
+外|ほか|lain; selain|kket
+しかし|しかし|tetapi; namun|kket
+でも|でも|tetapi|kket
+それから|それから|lalu; setelah itu|kket
+そうして|そうして|lalu; dan|kket
+
+# ---------- N5: Awalan & akhiran
+お～|お～|awalan sopan (o~)|akhiran
+～だけ|～だけ|hanya ~|akhiran
+～など|～など|dan lain-lain|akhiran
+～がる|～がる|merasa ~; tampak ~|akhiran
