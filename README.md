@@ -15,6 +15,19 @@ dipasang di atas versi lama tanpa kehilangan progres.
 Supaya suara (text-to-speech) berfungsi, pastikan data suara **Jepang** terpasang di HP:
 Pengaturan → Sistem → Bahasa → Keluaran text-to-speech → Mesin Google → Instal data suara → 日本語.
 
+## Versi web
+
+Tanpa instal, buka di browser (HP Android, iPhone, atau laptop):
+**<https://jonathan12345salim.github.io/belajar-jepang/>**
+
+- Setelah dibuka sekali, versi web juga bisa dipakai **offline**.
+- Bisa dipasang seperti aplikasi lewat menu browser **"Tambahkan ke Layar Utama"**
+  (di iPhone sangat disarankan, supaya Safari tidak menghapus progres yang lama tidak dibuka).
+- Progres tersimpan di browser masing-masing perangkat dan tidak tersinkron dengan APK.
+  Untuk memindahkan progres, pakai **Profil → Pengaturan → Cadangan progres**.
+- APK dan web dibangun dari kode yang sama oleh workflow yang sama, jadi selalu diperbarui bersamaan
+  (nomor versinya terlihat di **Profil → Tentang aplikasi**).
+
 ## Isi materi
 
 | Level | Kanji | Kosakata | Tata bahasa | Arti Indonesia |

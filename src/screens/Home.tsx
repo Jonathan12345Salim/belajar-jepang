@@ -3,7 +3,7 @@ import { db } from '../lib/data';
 import { getPath, nextLesson } from '../lib/path';
 import { enc, go } from '../lib/router';
 import { dueIds, nextDue, streak, today, update, useProgress } from '../lib/store';
-import { isNative, japaneseVoiceAvailable, openVoiceInstall } from '../lib/tts';
+import { isNative, japaneseVoiceAvailable, openVoiceInstall, VOICE_HELP } from '../lib/tts';
 import { fmtWait } from '../lib/util';
 import { Bar } from '../components/ui';
 
@@ -97,13 +97,13 @@ export function Home() {
 
       {!voiceOk && (
         <div className="card flat note-box" style={{ margin: '0 14px 12px' }}>
-          🔇 Suara bahasa Jepang belum tersedia di HP ini.
+          🔇 Suara bahasa Jepang belum tersedia di perangkat ini.
           {isNative ? (
             <button className="btn sm sec mt" onClick={() => openVoiceInstall()}>
               Pasang suara Jepang
             </button>
           ) : null}
-          <div className="small muted mt">Pengaturan HP → Bahasa → Keluaran text-to-speech → Mesin Google → Instal data suara → Jepang.</div>
+          <div className="small muted mt">{VOICE_HELP}</div>
         </div>
       )}
 

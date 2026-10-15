@@ -66,17 +66,40 @@ export async function stopSpeak() {
   }
 }
 
+/** Browser memuat daftar suara secara bertahap; tunggu sebentar bila masih kosong. */
+async function waitWebVoices(): Promise<void> {
+  const s = window.speechSynthesis;
+  if (s.getVoices().length) return;
+  await new Promise<void>((resolve) => {
+    const t = setTimeout(resolve, 2000);
+    s.addEventListener(
+      'voiceschanged',
+      () => {
+        clearTimeout(t);
+        resolve();
+      },
+      { once: true },
+    );
+  });
+}
+
 /** Cek apakah suara bahasa Jepang tersedia di perangkat. */
 export async function japaneseVoiceAvailable(): Promise<boolean> {
   try {
     if (native) return (await TextToSpeech.isLanguageSupported({ lang: 'ja-JP' })).supported;
     if (!('speechSynthesis' in window)) return false;
+    await waitWebVoices();
     pickWebVoice();
     return !!webVoice;
   } catch {
     return false;
   }
 }
+
+/** Petunjuk memasang suara bahasa Jepang, sesuai platform. */
+export const VOICE_HELP = native
+  ? 'Pengaturan HP → Sistem → Bahasa → Keluaran text-to-speech → Mesin Google → ⚙️ → Instal data suara → Jepang (日本語). Gratis dan bisa dipakai offline.'
+  : 'Android: pasang data suara Jepang di Google Text-to-speech (Pengaturan → Bahasa → Keluaran text-to-speech). iPhone/iPad: Pengaturan → Aksesibilitas → Konten Lisan → Suara → Jepang. Windows: Pengaturan → Waktu & bahasa → Ucapan → tambah suara Jepang. Setelah itu muat ulang halaman ini.';
 
 /** Buka layar pemasangan data suara (Android). */
 export async function openVoiceInstall() {

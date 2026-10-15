@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Membuat ikon & splash Android dari goresan KanjiVG huruf あ (butuh Pillow).
+"""Membuat ikon Android, ikon web & splash dari goresan KanjiVG huruf あ (butuh Pillow).
 
 Jalankan: python3 scripts/make_icons.py
 """
@@ -141,6 +141,9 @@ def main():
                 g = glyph(paths, int(s * 0.42), 0.9, 7, WHITE)
                 img.paste(g, ((w - g.size[0]) // 2, (h - g.size[1]) // 2), g)
                 img.save(p)
+    # ikon versi web (PWA & iPhone)
+    for size in (180, 192, 512):
+        glyph(paths, size, 0.62, 7, WHITE, RED).save(os.path.join(ROOT, 'public', f'icon-{size}.png'))
     print('ikon & splash dibuat')
 
 

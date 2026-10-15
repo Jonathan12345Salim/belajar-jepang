@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { shareText } from '../lib/native';
 import { exportBackup, importBackup, resetAll, setSetting, useSettings } from '../lib/store';
-import { isNative, japaneseVoiceAvailable, openVoiceInstall, speak } from '../lib/tts';
+import { isNative, japaneseVoiceAvailable, openVoiceInstall, speak, VOICE_HELP } from '../lib/tts';
 import { Header, Seg, Toggle, toast } from '../components/ui';
 
 function Row({ title, sub, children }: { title: string; sub?: string; children: React.ReactNode }) {
@@ -118,9 +118,7 @@ export function SettingsScreen() {
             Pasang / perbarui data suara Jepang
           </button>
         )}
-        <div className="small muted mt">
-          Jika suara tidak keluar: buka Pengaturan HP → Sistem → Bahasa → Keluaran text-to-speech → pilih mesin Google → ⚙️ → Instal data suara → Jepang (日本語). Data suara gratis dan bisa dipakai offline.
-        </div>
+        <div className="small muted mt">Jika suara tidak keluar: {VOICE_HELP}</div>
       </div>
 
       <h2 className="sec">Cadangan progres</h2>

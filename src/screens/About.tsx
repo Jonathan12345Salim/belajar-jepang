@@ -1,6 +1,11 @@
 import { db } from '../lib/data';
+import { isNative } from '../lib/tts';
 import { LEVELS } from '../lib/types';
 import { Header } from '../components/ui';
+
+const APP_VERSION: string = import.meta.env.VITE_APP_VERSION ?? 'dev';
+const WEB_URL = 'https://jonathan12345salim.github.io/belajar-jepang/';
+const APK_URL = 'https://github.com/Jonathan12345Salim/belajar-jepang/releases/latest';
 
 export function About() {
   const d = db();
@@ -12,6 +17,17 @@ export function About() {
         <p className="muted" style={{ marginTop: 0 }}>
           Aplikasi belajar bahasa Jepang dari nol, sepenuhnya offline.
         </p>
+        <p className="small">
+          Versi <b>{APP_VERSION}</b> · {isNative ? 'aplikasi Android' : 'versi web'}
+        </p>
+        <div className="row wrap mb">
+          <a className="btn sm sec" href={WEB_URL} target="_blank" rel="noopener noreferrer">
+            🌐 Versi web
+          </a>
+          <a className="btn sm sec" href={APK_URL} target="_blank" rel="noopener noreferrer">
+            📲 Unduh APK
+          </a>
+        </div>
         <table className="small" style={{ width: '100%', borderCollapse: 'collapse' }}>
           <thead>
             <tr className="muted">
