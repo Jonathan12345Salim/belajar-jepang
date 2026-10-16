@@ -1,0 +1,93 @@
+# Cerita bantu ingat (mnemonik) untuk kana. Format: kana|mnemonik
+あ|Seperti huruf "a" kursif yang ditusuk tanda silang (+).
+い|Dua garis berdiri berdampingan, seperti dua huruf "i" kembar: ii.
+う|Orang meringis "uuuh" karena sakit perut: garis kecil di atas, perut melengkung di bawah.
+え|Penari yang berpose "eh!" sambil menendang ke samping.
+お|Huruf "o" yang ditemani tanda tambah dan sebuah titik di kanan atas.
+か|Burung gagak berbunyi "ka-ka!" sambil mengepakkan sayap (garis kecil di kanan).
+き|Kunci (key = "ki") dengan dua gerigi di batangnya.
+く|Paruh burung yang terbuka: "ku-ku!"
+け|Tiang di kiri dan tongkat berkait di kanan: "Ke mana?"
+こ|Dua ekor cacing kecil berbaring bertumpuk: "ko".
+さ|Mirip き tetapi dengan satu garis saja: "sa"tu garis.
+し|Kail pancing berbentuk huruf J terbalik: "shi".
+す|Tali yang membuat simpul lingkaran di tengah: "su"sah dilepas.
+せ|Mulut terbuka lebar yang "se"nyum dengan gigi di atas.
+そ|Jalan berkelok zigzag di "so"re hari.
+た|Huruf "t" dengan こ kecil di sampingnya: "ta".
+ち|Mirip angka 5 yang terbalik: "chi".
+つ|Ombak besar tsunami yang melengkung: "tsu".
+て|Tangan (te) yang terulur ke depan.
+と|Duri yang tertancap di jari kaki: "to"long!
+な|Tanda silang dan simpul kecil, seperti "na"nas dengan daunnya.
+に|Garis tegak dengan dua garis kecil: "ni" (dua = ni).
+ぬ|Mi yang melilit di sumpit: "nu"dle.
+ね|Kucing (neko) yang meringkuk dengan ekor bergulung di bawah.
+の|Rambu bulat "no!" (dilarang).
+は|Huruf "H" yang bergandengan dengan huruf "a": "ha".
+ひ|Mulut tersenyum lebar sambil tertawa "hi-hi-hi".
+ふ|Gunung "Fu"ji dengan awan di sekelilingnya.
+へ|Puncak bukit kecil: "heh", capek mendakinya.
+ほ|Mirip は dengan satu garis tambahan: "ho"tel bertingkat.
+ま|Mama yang membawa tas bundar di bawah.
+み|Angka 21 yang ditulis miring: "mi".
+む|Sapi yang melenguh "muu" dengan ekor melingkar.
+め|Mata (me) yang tertutup rapat.
+も|Kail pancing dengan dua umpan: "mo"re fish!
+や|Ketapel dengan karet tertarik: "ya!"
+ゆ|Ikan yang berenang di dalam lingkaran: "yu".
+よ|Yoyo yang tergantung di jari: "yo".
+ら|Kelinci (rabbit = "ra") dengan telinga di atas.
+り|Dua garis seperti sungai kecil (river = "ri").
+る|Mirip ろ dengan lingkaran kecil di ujung: ada "ru"ang kecil di bawah.
+れ|Orang berlutut dan "re"laks.
+ろ|Mirip angka 3: tiga potong "ro"ti.
+わ|Wajan (wa) dengan gagang di kiri.
+を|Orang terkejut "wo!". Dipakai sebagai partikel dan dibaca "o".
+ん|Huruf "n" kecil yang ditulis miring.
+ア|Kapak kecil: ア mirip kapak (axe = "a").
+イ|Mirip bagian kiri kanji 休 (orang berdiri): "i".
+ウ|Mirip う tetapi lebih kaku dengan atap di atasnya.
+エ|Seperti balok rel atau huruf I besar: "e"levator.
+オ|Orang berdiri merentangkan tangan: "o"!
+カ|Mirip か tanpa garis kecil, dan mirip kanji 力 (tenaga).
+キ|Kunci (key = "ki") dengan dua gerigi, mirip き.
+ク|Mirip く dengan atap kecil.
+ケ|Huruf "K" yang miring: "ke".
+コ|Sudut kotak yang terbuka: "ko".
+サ|Sate dengan dua tusukan: "sa".
+シ|Tiga tetes air yang mengarah ke ATAS seperti wajah tersenyum. (Bedakan dengan ツ.)
+ス|Orang berlari "su"per cepat dengan kaki terbuka.
+セ|Mirip せ hiragana, tetapi lebih kaku.
+ソ|Dua garis jatuh dari atas ke bawah. (Bedakan dengan ン yang garis panjangnya naik ke atas.)
+タ|Mirip ク dengan satu garis di dalamnya: "ta".
+チ|Mirip kanji 千 (seribu) yang kecil: "chi".
+ツ|Tiga tetes air jatuh ke BAWAH seperti tsunami. (Bedakan dengan シ.)
+テ|Mirip て dengan antena: "te"levisi.
+ト|Tiang dengan cabang ke kanan: "to"tem.
+ナ|Tanda tambah yang miring: "na".
+ニ|Dua garis, sama seperti kanji 二 (dua = ni).
+ヌ|Sumpit yang menjepit mi: "nu".
+ネ|Mirip kanji 示 dengan topi: "ne".
+ノ|Satu garis miring: "no" (tidak)!
+ハ|Dua garis terbuka seperti orang tertawa "ha-ha".
+ヒ|Sendok yang bengkok: "hi".
+フ|Mirip angka 7 yang lebar: "fu".
+ヘ|Sama persis dengan へ hiragana.
+ホ|Pohon kecil dengan dua titik: "ho".
+マ|Wajah dengan hidung kecil: "ma".
+ミ|Tiga garis miring (tiga = "mi"ttsu).
+ム|Siku dengan bahu: "mu".
+メ|Tanda silang: "me".
+モ|Mirip も tetapi garisnya lurus.
+ヤ|Mirip や hiragana.
+ユ|Seperti huruf U yang jatuh terbalik: "yu".
+ヨ|Seperti huruf E yang terbalik: "yo".
+ラ|Mirip ら dengan topi datar.
+リ|Mirip り hiragana.
+ル|Dua kaki yang berjalan: "ru".
+レ|Seperti huruf L yang miring: "re".
+ロ|Kotak, mirip kanji 口 (mulut): "ro".
+ワ|Mirip わ, kotak yang terbuka di bawah.
+ヲ|Sangat jarang dipakai; dibaca "o".
+ン|Mirip ソ, tetapi garis panjangnya ditulis dari bawah ke atas.

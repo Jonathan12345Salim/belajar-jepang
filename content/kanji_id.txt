@@ -1,0 +1,620 @@
+# Arti kanji dalam bahasa Indonesia (+ mnemonik/cerita bantu ingat untuk N5)
+# Format: kanji|arti1; arti2|mnemonik (opsional)
+
+# ===== N5 =====
+一|satu|Satu garis mendatar = satu.
+二|dua|Dua garis mendatar = dua.
+三|tiga|Tiga garis bertumpuk = tiga.
+四|empat|Sebuah jendela dengan tirai di dalamnya. Jendela punya empat sisi.
+五|lima|Garis atas dan bawah mengapit bentuk mirip angka 5 yang ditulis kaku.
+六|enam|Topi (亠) dengan dua kaki terbuka (ハ): rumah kecil untuk enam orang.
+七|tujuh|Mirip angka 7 yang terbalik dan dicoret.
+八|delapan|Dua garis yang menyebar ke bawah (ハ), seperti angka 8 yang terbelah dua.
+九|sembilan|Mirip angka 9 yang terjatuh ke depan sambil menjulurkan kaki.
+十|sepuluh|Tanda tambah (+): semua sepuluh jari disilangkan.
+百|seratus|Satu (一) di atas putih (白): satu lembar putih berisi seratus.
+千|seribu|Sepuluh (十) dengan coretan miring di atasnya = seribu.
+万|sepuluh ribu|Seperti kail pancing yang menangkap uang sangat banyak: 10.000.
+円|yen; lingkaran|Bingkai berlubang seperti dompet: tempat menyimpan uang yen.
+日|hari; matahari|Matahari yang digambar kotak dengan garis di tengah. Matahari terbit = satu hari.
+月|bulan|Bulan sabit dengan dua garis di dalamnya. Juga dipakai untuk bulan kalender.
+火|api|Api unggun dengan percikan api di kedua sisinya.
+水|air|Aliran sungai di tengah dengan percikan air ke kiri dan kanan.
+木|pohon; kayu|Pohon dengan batang, dahan, dan akar.
+金|emas; uang|Atap (人) di atas tanah (土) dengan dua bongkah emas di dalamnya.
+土|tanah|Kecambah (十) yang tumbuh dari tanah (garis bawah).
+山|gunung|Tiga puncak gunung.
+川|sungai|Tiga garis air yang mengalir: sungai.
+天|langit; surga|Orang besar (大) dengan satu garis di atas kepalanya: itulah langit.
+気|semangat; udara; perasaan|Uap (气) yang mengepul dengan tanda silang: udara dan energi.
+雨|hujan|Langit dan atap dengan tetes-tetes air jatuh di bawahnya.
+人|orang|Dua kaki orang yang sedang berjalan.
+子|anak|Bayi yang dibedong dengan kedua tangan terentang.
+女|perempuan|Perempuan yang duduk bersimpuh dengan tangan menyilang.
+男|laki-laki|Sawah (田) + tenaga (力): orang yang bekerja keras di sawah.
+父|ayah|Dua tangan memegang kapak yang bersilang: ayah yang bekerja keras.
+母|ibu|Perempuan (女) dengan dua titik: ibu yang menyusui anaknya.
+友|teman|Dua tangan yang saling membantu: teman.
+上|atas|Garis tegak yang menunjuk ke ATAS dari tanah.
+下|bawah|Garis tegak yang menunjuk ke BAWAH dari langit.
+中|tengah; dalam|Garis yang menembus tepat di tengah kotak.
+右|kanan|Tangan (ナ) + mulut (口): tangan kanan menyuapkan makanan ke mulut.
+左|kiri|Tangan (ナ) + alat (工): tangan kiri memegang alat.
+外|luar|Sore (夕) + ramalan (卜): orang zaman dulu meramal di luar rumah saat sore.
+東|timur|Matahari (日) terbit di balik pohon (木): arah timur.
+西|barat|Burung masuk ke sarangnya saat matahari terbenam di barat.
+南|selatan|Tanaman tumbuh subur di bawah atap yang hangat: angin selatan itu hangat.
+北|utara|Dua orang duduk saling membelakangi, menahan angin dingin dari utara.
+大|besar|Orang yang merentangkan tangannya lebar-lebar: "Sebesar ini!"
+小|kecil|Satu garis kecil di tengah dengan dua titik kecil: kecil.
+長|panjang; kepala (pemimpin)|Orang tua dengan rambut panjang tergerai.
+高|tinggi; mahal|Menara bertingkat yang menjulang tinggi.
+白|putih|Matahari (日) dengan seberkas sinar di atasnya: cahaya putih.
+年|tahun|Orang memanen padi setahun sekali: tahun.
+時|waktu; jam|Matahari (日) + kuil (寺): jam matahari di kuil menunjukkan waktu.
+間|antara; selang; ruang|Matahari (日) terlihat di antara daun pintu gerbang (門).
+今|sekarang|Orang berteduh di bawah atap: hujan turun, berteduh sekarang juga!
+毎|setiap|Orang dengan topi (𠂉) di atas ibu (母): setiap hari ibu bekerja.
+午|tengah hari; siang|Mirip sapi (牛) tanpa tanduk: tengah hari waktu sapi beristirahat.
+前|depan; sebelum|Tanduk (丷) di atas, bulan (月) dan pisau (刂): memotong daging di depan.
+後|belakang; setelah|Langkah kaki (彳) + benang (幺) + kaki terseret (夂): berjalan pelan di belakang.
+半|setengah|Garis tegak membelah benda menjadi dua bagian sama: setengah.
+先|lebih dulu; depan|Orang dengan kaki (儿) yang melangkah lebih dulu.
+学|belajar; ilmu|Anak (子) di bawah atap sekolah yang bersinar: belajar.
+校|sekolah|Pohon (木) + bertukar (交): sekolah tempat bertukar ilmu di bawah pohon.
+生|hidup; lahir; murni|Tunas yang tumbuh dari tanah: hidup, lahir.
+名|nama|Sore (夕) + mulut (口): saat gelap kita memanggil nama orang.
+本|buku; asal; utama|Pohon (木) dengan tanda di akarnya: akar/asal. Juga berarti buku.
+語|bahasa; kata|Kata-kata (言) + aku (吾): bahasa yang aku ucapkan.
+国|negara|Permata raja (玉) di dalam perbatasan (囗): negara.
+行|pergi; melakukan|Gambar persimpangan jalan: pergi.
+来|datang|Pohon (木) yang berbuah: musim panen akan datang.
+出|keluar|Dua gunung bertumpuk: tunas yang keluar dari tanah.
+入|masuk|Seperti orang (人) yang menunduk masuk ke dalam.
+見|melihat|Mata (目) di atas kaki (儿): mata yang berjalan untuk melihat.
+聞|mendengar; bertanya|Telinga (耳) di pintu (門): menguping, mendengar.
+読|membaca|Kata-kata (言) + menjual (売): membaca keras-keras seperti pedagang.
+書|menulis|Tangan memegang kuas (聿) di atas matahari (日): menulis.
+話|berbicara; cerita|Kata-kata (言) + lidah (舌): berbicara.
+食|makan; makanan|Atap (人) di atas makanan yang baik (良): makan.
+休|istirahat; libur|Orang (亻) bersandar di pohon (木): istirahat.
+何|apa|Orang (亻) + bisa (可): "Orang itu bisa apa?"
+車|mobil; kendaraan|Gerobak dilihat dari atas: dua roda dan as di tengah.
+電|listrik|Hujan (雨) dengan petir di bawahnya: listrik.
+
+# ===== N4 =====
+会|bertemu; pertemuan
+同|sama
+事|hal; perkara
+自|diri sendiri
+社|perusahaan; kuil Shinto
+発|berangkat; terbit; mengeluarkan
+者|orang (yang melakukan)
+地|tanah; bumi
+業|usaha; bisnis
+方|arah; orang (sopan); cara
+新|baru
+場|tempat
+員|anggota; pegawai
+立|berdiri
+開|membuka
+手|tangan
+力|tenaga; kekuatan
+問|pertanyaan; masalah
+代|ganti; zaman; biaya
+明|terang; jelas
+動|bergerak
+京|ibu kota
+目|mata
+通|lewat; melalui
+言|berkata; kata
+理|alasan; logika
+体|tubuh; badan
+田|sawah
+主|tuan; utama
+題|topik; judul
+意|pikiran; maksud
+不|tidak; bukan
+作|membuat
+用|keperluan; menggunakan
+度|derajat; kali
+強|kuat
+公|umum; publik
+持|memegang; membawa
+野|padang; lapangan
+以|dengan; sejak
+思|berpikir
+家|rumah; keluarga
+世|dunia; generasi
+多|banyak
+正|benar; tepat
+安|aman; murah; tenang
+院|lembaga; gedung (rumah sakit, dsb.)
+心|hati; pikiran
+界|dunia; batas
+教|mengajar; ajaran
+文|kalimat; tulisan; sastra
+元|asal; awal; dulu
+重|berat; penting
+近|dekat
+考|memikirkan
+画|gambar; goresan
+海|laut
+売|menjual
+知|tahu; pengetahuan
+道|jalan
+集|mengumpulkan; berkumpul
+別|terpisah; lain
+物|benda
+使|menggunakan
+品|barang; mutu
+計|mengukur; rencana
+死|mati
+特|khusus
+私|saya; pribadi
+始|mulai
+朝|pagi
+運|mengangkut; nasib
+終|selesai; akhir
+台|alas; penghitung mesin/kendaraan
+広|luas
+住|tinggal
+真|benar; asli
+有|ada; memiliki
+口|mulut
+少|sedikit
+町|kota (kecil)
+料|biaya; bahan
+工|kerajinan; pabrik
+建|membangun
+空|langit; kosong
+急|cepat; darurat
+止|berhenti
+送|mengirim; mengantar
+切|memotong
+転|berputar; jatuh
+研|mengasah; meneliti
+足|kaki; cukup
+究|meneliti
+楽|senang; musik; mudah
+起|bangun
+着|memakai; tiba
+店|toko
+病|sakit
+質|mutu; sifat
+待|menunggu
+試|mencoba; ujian
+族|suku; keluarga
+銀|perak
+早|cepat; awal
+映|memantulkan; menayangkan
+親|orang tua; akrab
+験|menguji
+英|Inggris; unggul
+医|dokter; pengobatan
+仕|melayani; bekerja
+去|pergi; lalu
+味|rasa
+写|menyalin; memotret
+字|huruf
+答|jawaban
+夜|malam
+音|bunyi; suara
+注|menuang; perhatian
+帰|pulang
+古|tua; lama
+歌|lagu; bernyanyi
+買|membeli
+悪|buruk; jahat
+図|gambar; peta
+週|minggu (pekan)
+室|ruangan
+歩|berjalan kaki
+風|angin; gaya
+紙|kertas
+黒|hitam
+花|bunga
+春|musim semi
+赤|merah
+青|biru; hijau
+館|gedung besar
+屋|atap; rumah; toko
+色|warna
+走|berlari
+秋|musim gugur
+夏|musim panas
+習|belajar; berlatih
+駅|stasiun
+洋|samudra; Barat
+旅|perjalanan
+服|pakaian
+夕|sore
+借|meminjam
+曜|hari dalam seminggu
+飲|minum
+肉|daging
+貸|meminjamkan
+堂|aula; balai
+鳥|burung
+飯|nasi; makanan
+勉|berusaha keras
+冬|musim dingin
+昼|siang
+茶|teh
+弟|adik laki-laki
+牛|sapi
+魚|ikan
+兄|kakak laki-laki
+犬|anjing
+妹|adik perempuan
+姉|kakak perempuan
+漢|Tiongkok (Han)
+
+# ===== N3 =====
+政|politik; pemerintahan
+議|musyawarah; rapat
+民|rakyat
+連|membawa serta; berderet
+対|terhadap; lawan
+部|bagian; departemen
+合|cocok; bergabung
+市|kota; pasar
+内|dalam
+相|saling; menteri
+定|menetapkan
+回|kali; putaran
+選|memilih
+米|beras; Amerika
+実|kenyataan; buah
+関|hubungan; gerbang
+決|memutuskan
+全|seluruh; semua
+表|permukaan; tabel; menyatakan
+戦|perang; pertandingan
+経|melewati; mengelola
+最|paling
+現|sekarang; muncul
+調|menyelidiki; nada
+化|berubah; -isasi
+当|mengenai; tepat
+約|janji; kira-kira
+首|leher
+法|hukum; cara
+性|sifat; jenis kelamin
+要|perlu; penting
+制|sistem; aturan
+治|memerintah; menyembuhkan
+務|tugas
+成|menjadi; berhasil
+期|periode; jangka
+取|mengambil
+都|ibu kota; metropolitan
+和|damai; gaya Jepang
+機|mesin; kesempatan
+平|datar; damai
+加|menambah
+受|menerima
+続|melanjutkan
+進|maju
+数|angka; jumlah
+記|mencatat
+初|pertama; awal
+指|jari; menunjuk
+権|hak; kekuasaan
+支|cabang; mendukung
+産|menghasilkan; melahirkan
+点|titik; nilai
+報|laporan; berita
+済|selesai; melunasi
+活|hidup; aktif
+原|asal; padang
+共|bersama
+得|mendapat
+解|memecahkan; menguraikan
+交|bertukar; bergaul
+資|modal; sumber daya
+予|sebelumnya
+向|menghadap; arah
+際|saat; tepi
+勝|menang
+面|wajah; permukaan
+告|memberi tahu
+反|anti; melawan
+判|menilai; stempel
+認|mengakui
+参|ikut serta; berkunjung
+利|untung; manfaat
+組|kelompok; merangkai
+信|percaya
+在|ada; berada
+件|perkara; kasus
+側|sisi
+任|tugas; mempercayakan
+引|menarik
+求|mencari; meminta
+所|tempat
+次|berikutnya
+昨|kemarin; yang lalu
+論|pendapat; teori
+官|pejabat
+増|bertambah
+係|petugas; hubungan
+感|perasaan
+情|emosi; perasaan
+投|melempar
+示|menunjukkan
+変|berubah; aneh
+打|memukul
+直|langsung; memperbaiki
+両|kedua; keduanya
+式|upacara; gaya
+確|pasti
+果|buah; hasil
+容|isi; wujud
+必|pasti; harus
+演|pertunjukan; memerankan
+歳|tahun (umur)
+争|bersaing; bertengkar
+談|bercakap
+能|kemampuan
+位|peringkat; kira-kira
+置|menaruh
+流|mengalir
+格|tingkat; status
+疑|ragu; curiga
+過|melewati; berlebihan
+局|kantor; biro
+放|melepaskan
+常|biasa; selalu
+状|keadaan
+球|bola
+職|pekerjaan; jabatan
+与|memberi
+供|menyuguhkan; anak
+役|peran; tugas
+構|menyusun; peduli
+割|membagi; persentase
+費|biaya
+付|menempel; melampirkan
+由|alasan; asal
+説|penjelasan; teori
+難|sulit
+優|unggul; lembut
+夫|suami
+収|menghasilkan; menyimpan
+断|memutus; menolak
+石|batu
+違|berbeda
+消|menghapus; padam
+神|dewa; Tuhan
+番|giliran; nomor
+規|aturan
+術|teknik; seni
+備|menyiapkan
+宅|rumah
+害|bahaya; kerugian
+配|membagikan
+警|memperingatkan
+育|membesarkan; tumbuh
+席|kursi; tempat duduk
+訪|mengunjungi
+乗|naik (kendaraan)
+残|tersisa
+想|membayangkan
+声|suara
+念|keinginan; pikiran
+助|menolong
+労|kerja keras
+例|contoh
+然|demikian
+限|batas
+追|mengejar
+商|dagang
+葉|daun
+伝|menyampaikan
+働|bekerja
+形|bentuk
+景|pemandangan
+落|jatuh
+好|suka
+退|mundur
+頭|kepala
+負|kalah; menanggung
+渡|menyeberang; menyerahkan
+失|kehilangan
+差|selisih; perbedaan
+末|akhir; ujung
+守|menjaga
+若|muda
+種|jenis; benih
+美|indah; cantik
+命|nyawa; perintah
+福|keberuntungan
+望|harapan
+非|bukan; salah
+観|melihat; pandangan
+察|mengamati
+段|tangga; tingkat
+横|samping
+深|dalam
+申|menyampaikan (sopan)
+様|cara; Tuan/Nyonya (sangat sopan)
+財|harta
+港|pelabuhan
+識|mengetahui; mengenali
+呼|memanggil
+達|mencapai; jamak (orang)
+良|baik
+候|cuaca; musim
+程|tingkat; kira-kira
+満|penuh
+敗|kalah
+値|harga; nilai
+突|menusuk; tiba-tiba
+光|cahaya
+路|jalan
+科|bidang; jurusan
+積|menumpuk
+他|lain
+処|menangani
+太|gemuk; tebal
+客|tamu; pelanggan
+否|tidak; menyangkal
+師|guru; ahli
+登|mendaki
+易|mudah
+速|cepat
+存|ada; mengetahui
+飛|terbang
+殺|membunuh
+号|nomor
+単|tunggal; sederhana
+座|duduk; tempat duduk
+破|merobek; melanggar
+除|menghilangkan
+完|sempurna; selesai
+降|turun
+責|tanggung jawab; menyalahkan
+捕|menangkap
+危|bahaya
+給|gaji; memberi
+苦|pahit; menderita
+迎|menyambut
+園|taman
+具|alat
+辞|mengundurkan diri; kata
+因|sebab
+馬|kuda
+愛|cinta
+富|kaya
+彼|dia (laki-laki)
+未|belum
+舞|menari
+亡|meninggal
+冷|dingin
+適|cocok
+婦|wanita; istri
+寄|mampir; mendekat
+込|penuh sesak; masuk
+顔|wajah
+類|jenis
+余|sisa; berlebih
+王|raja
+返|mengembalikan
+妻|istri
+背|punggung; tinggi badan
+熱|panas; demam
+宿|penginapan
+薬|obat
+険|curam; berbahaya
+頼|meminta; mengandalkan
+覚|mengingat; terbangun
+船|kapal
+途|jalan; tengah jalan
+許|mengizinkan
+抜|mencabut
+便|praktis; pos
+留|tinggal; menahan
+罪|dosa; kejahatan
+努|berusaha
+精|semangat; halus
+散|berserakan
+静|tenang
+婚|pernikahan
+喜|gembira
+浮|mengapung
+絶|memutus; mutlak
+幸|bahagia
+押|mendorong; menekan
+倒|roboh
+等|dan lain-lain; setara
+老|tua
+曲|lagu; membelok
+払|membayar
+庭|halaman
+徒|murid; berjalan kaki
+勤|bekerja; rajin
+遅|lambat; terlambat
+居|tinggal; berada
+雑|campur aduk
+招|mengundang
+困|kesulitan
+欠|kurang; absen
+更|lebih lagi; mengganti
+刻|mengukir; waktu
+賛|setuju; memuji
+抱|memeluk
+犯|melanggar; kejahatan
+恐|takut
+息|napas
+遠|jauh
+戻|kembali
+願|memohon
+絵|gambar
+越|melewati
+欲|keinginan
+痛|sakit
+笑|tertawa
+互|saling
+束|ikat; berkas
+似|mirip
+列|baris; deret
+探|mencari
+逃|melarikan diri
+遊|bermain
+迷|tersesat; bingung
+夢|mimpi
+君|kamu (akrab)
+閉|menutup
+緒|tali; awal
+折|melipat; mematahkan
+草|rumput
+暮|senja; hidup sehari-hari
+酒|sake; minuman keras
+悲|sedih
+晴|cerah
+掛|menggantung
+到|tiba
+寝|tidur
+暗|gelap
+盗|mencuri
+吸|menghisap
+陽|matahari
+御|awalan sopan
+歯|gigi
+忘|lupa
+雪|salju
+吹|meniup
+娘|anak perempuan
+誤|salah; keliru
+洗|mencuci
+慣|terbiasa
+礼|hormat; terima kasih
+窓|jendela
+昔|dahulu kala
+貧|miskin
+怒|marah
+泳|berenang
+祖|leluhur
+杯|cangkir; gelas
+疲|lelah
+皆|semua
+鳴|berbunyi; berkicau
+腹|perut
+煙|asap
+眠|tidur; mengantuk
+怖|takut
+耳|telinga
+頂|puncak; menerima
+箱|kotak
+晩|malam
+寒|dingin
+髪|rambut
+忙|sibuk
+才|bakat; umur
+靴|sepatu
+恥|malu
+偶|kebetulan; genap
+偉|hebat; agung
+猫|kucing
+幾|berapa

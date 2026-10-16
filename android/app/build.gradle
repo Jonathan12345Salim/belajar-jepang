@@ -1,0 +1,71 @@
+apply plugin: 'com.android.application'
+
+// Nomor versi diisi otomatis oleh GitHub Actions (VERSION_CODE = nomor build),
+// supaya APK baru selalu bisa dipasang menimpa versi lama tanpa menghapus progres.
+def appVersionCode = (System.getenv("VERSION_CODE") ?: "1") as Integer
+def appVersionName = System.getenv("VERSION_NAME") ?: "1.0"
+
+android {
+    namespace = "id.jonathansalim.belajarjepang"
+    compileSdk = rootProject.ext.compileSdkVersion
+    defaultConfig {
+        applicationId "id.jonathansalim.belajarjepang"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode appVersionCode
+        versionName appVersionName
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        aaptOptions {
+             // Files and dirs to omit from the packaged assets dir, modified to accommodate modern web apps.
+             // Default: https://android.googlesource.com/platform/frameworks/base/+/282e181b58cf72b6ca770dc7ca5f91f135444502/tools/aapt/AaptAssets.cpp#61
+            ignoreAssetsPattern = '!.svn:!.git:!.ds_store:!*.scc:.*:!CVS:!thumbs.db:!picasa.ini:!*~'
+        }
+    }
+    signingConfigs {
+        release {
+            // Kunci tanda tangan aplikasi pribadi ini. Kunci yang sama dipakai di setiap build
+            // agar pembaruan APK bisa langsung dipasang di atas versi sebelumnya.
+            // Bisa diganti lewat environment variable bila ingin memakai kunci rahasia sendiri.
+            storeFile file(System.getenv("KEYSTORE_FILE") ?: "../keystore/belajar-jepang.jks")
+            storePassword System.getenv("KEYSTORE_PASSWORD") ?: "belajarjepang"
+            keyAlias System.getenv("KEY_ALIAS") ?: "belajarjepang"
+            keyPassword System.getenv("KEY_PASSWORD") ?: "belajarjepang"
+        }
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    flatDir{
+        dirs '../capacitor-cordova-android-plugins/src/main/libs', 'libs'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "androidx.appcompat:appcompat:$androidxAppCompatVersion"
+    implementation "androidx.coordinatorlayout:coordinatorlayout:$androidxCoordinatorLayoutVersion"
+    implementation "androidx.core:core-splashscreen:$coreSplashScreenVersion"
+    implementation project(':capacitor-android')
+    testImplementation "junit:junit:$junitVersion"
+    androidTestImplementation "androidx.test.ext:junit:$androidxJunitVersion"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$androidxEspressoCoreVersion"
+    implementation project(':capacitor-cordova-android-plugins')
+}
+
+apply from: 'capacitor.build.gradle'
+
+try {
+    def servicesJSON = file('google-services.json')
+    if (servicesJSON.text) {
+        apply plugin: 'com.google.gms.google-services'
+    }
+} catch(Exception e) {
+    logger.info("google-services.json not found, google-services plugin not applied. Push Notifications won't work")
+}

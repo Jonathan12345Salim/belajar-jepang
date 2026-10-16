@@ -1,0 +1,527 @@
+# Materi tata bahasa.
+# "## id | level | pola | arti singkat" memulai satu pola.
+# pola:  rumus pola        info: penjelasan (boleh beberapa baris)
+# ex:    token token ... || terjemahan || indeks token kosong (0..) || pilihan salah khusus (opsional)
+# opts:  pilihan salah bawaan untuk soal isi-kosong
+# Token: {漢字|かんじ} = furigana. Awalan "+" = menempel ke token sebelumnya (tampilan),
+#        awalan "~" = menempel juga di romaji.
+
+## g5-01 | 5 | ～は ～です | A adalah B
+pola: [kata benda] は [kata benda] です
+info: Pola kalimat paling dasar. は (dibaca "wa") menandai topik kalimat, です membuat kalimat menjadi sopan.
+info: Bahasa Jepang tidak punya kata "adalah"; cukup "A は B です".
+ex: {私|わたし} +は {学生|がくせい} +です。 || Saya (adalah) pelajar. || 1
+ex: {田中|たなか}さん +は {先生|せんせい} +です。 || Pak Tanaka adalah guru. || 1
+ex: これ +は {本|ほん} +です。 || Ini (adalah) buku. || 1
+opts: を, に, で
+
+## g5-02 | 5 | ～じゃありません | A bukan B
+pola: [kata benda] は [kata benda] じゃありません
+info: Bentuk negatif dari です. Versi lebih formal: ではありません. Versi santai: じゃない.
+ex: {私|わたし} +は {先生|せんせい} +じゃありません。 || Saya bukan guru. || 3
+ex: これ +は {水|みず} +じゃありません。 || Ini bukan air. || 3
+ex: {山田|やまだ}さん +は {日本人|にほんじん} +ではありません。 || Pak Yamada bukan orang Jepang. || 3
+opts: です。, でした。, ます。
+
+## g5-03 | 5 | ～か | kalimat tanya
+pola: [kalimat] + か
+info: Tambahkan か di akhir kalimat untuk bertanya. Intonasi naik di akhir. Tanda tanya (？) boleh tidak dipakai.
+ex: あなた +は {学生|がくせい} +です +か。 || Apakah kamu pelajar? || 4
+ex: これ +は {何|なん} +です +か。 || Ini apa? || 4
+ex: トイレ +は どこ +です +か。 || Toiletnya di mana? || 4
+opts: ね。, よ。, を。
+
+## g5-04 | 5 | ～の～ | milik; ... dari ...
+pola: [kata benda 1] の [kata benda 2]
+info: の menghubungkan dua kata benda: kepemilikan ("buku saya") atau keterangan ("guru bahasa Jepang").
+info: Urutannya terbalik dari bahasa Indonesia: 私の本 = buku saya.
+ex: これ +は {私|わたし} +の {本|ほん} +です。 || Ini buku saya. || 3
+ex: {日本語|にほんご} +の {先生|せんせい} +です。 || (Beliau) guru bahasa Jepang. || 1
+ex: あれ +は {誰|だれ} +の {傘|かさ} +です +か。 || Itu payung siapa? || 3
+opts: は, を, に
+
+## g5-05 | 5 | ～も | juga
+pola: [kata benda] も ...
+info: も berarti "juga" dan menggantikan partikel は, が, atau を.
+ex: {私|わたし} +も {学生|がくせい} +です。 || Saya juga pelajar. || 1
+ex: {田中|たなか}さん +も {来|き}ます。 || Pak Tanaka juga datang. || 1
+ex: これ +も {百円|ひゃくえん} +です。 || Ini juga seratus yen. || 1
+opts: の, を, に
+
+## g5-06 | 5 | これ・それ・あれ | ini, itu, itu (jauh)
+pola: これ / それ / あれ / どれ は ...
+info: これ = benda di dekat pembicara, それ = di dekat lawan bicara, あれ = jauh dari keduanya, どれ = yang mana.
+info: Di depan kata benda pakai この / その / あの / どの: この本 = buku ini.
+ex: それ +は {何|なん} +です +か。 || Itu (yang di dekatmu) apa? || 0 || これ, どこ, この
+ex: あれ +は {私|わたし} +の {車|くるま} +です。 || Itu (yang jauh di sana) mobil saya. || 0 || それ, あそこ, あの
+ex: この {本|ほん} +は {高|たか}い +です。 || Buku ini mahal. || 0 || これ, ここ, どれ
+
+## g5-07 | 5 | ここ・そこ・あそこ | di sini, di situ, di sana
+pola: [kata benda] は ここ / そこ / あそこ / どこ です
+info: Kata penunjuk tempat. どこ = di mana. Versi sopan: こちら・そちら・あちら・どちら.
+ex: トイレ +は あそこ +です。 || Toilet ada di sana (jauh). || 2 || ここ, あれ, あの
+ex: {駅|えき} +は どこ +です +か。 || Stasiun di mana? || 2 || だれ, なに, いつ
+ex: ここ +は {教室|きょうしつ} +です。 || Tempat ini adalah ruang kelas. || 0 || どこ, あの, どの
+
+## g5-08 | 5 | ～に ～が あります／います | ada (benda / makhluk hidup)
+pola: [tempat] に [kata benda] が あります / います
+info: あります untuk benda mati dan tumbuhan; います untuk manusia dan hewan. に menandai tempat keberadaan.
+ex: {机|つくえ} +の {上|うえ} +に {本|ほん} +が あります。 || Ada buku di atas meja. || 6 || います。, です。, します。
+ex: {公園|こうえん} +に {犬|いぬ} +が います。 || Ada anjing di taman. || 4 || あります。, です。, します。
+ex: {教室|きょうしつ} +に {先生|せんせい} +が います。 || Ada guru di ruang kelas. || 4 || あります。, です。, します。
+
+## g5-09 | 5 | ～を | partikel objek
+pola: [kata benda] を [kata kerja]
+info: を (dibaca "o") menandai objek yang dikenai pekerjaan: makan APA, membaca APA.
+ex: {水|みず} +を {飲|の}みます。 || Saya minum air. || 1
+ex: {毎朝|まいあさ} パン +を {食|た}べます。 || Setiap pagi saya makan roti. || 2
+ex: {本|ほん} +を {読|よ}みます。 || Saya membaca buku. || 1
+opts: に, で, へ
+
+## g5-10 | 5 | ～ます／～ません | kata kerja sopan (sekarang/nanti)
+pola: [kata kerja]-ます (positif) / -ません (negatif)
+info: Bentuk ます adalah bentuk sopan kata kerja, dipakai untuk kebiasaan atau hal yang akan datang.
+info: Ganti ます menjadi ません untuk negatif: 食べます (makan) → 食べません (tidak makan).
+ex: {私|わたし} +は {肉|にく} +を {食|た}べ ~ません。 || Saya tidak makan daging. || 5 || ます。, ました。
+ex: {毎日|まいにち} {日本語|にほんご} +を {勉強|べんきょう}し ~ます。 || Setiap hari saya belajar bahasa Jepang. || 4 || ません。, ました。
+ex: {明日|あした} {学校|がっこう} +へ {行|い}き ~ます。 || Besok saya pergi ke sekolah. || 4 || ません。, ました。
+
+## g5-11 | 5 | ～ました／～ませんでした | kata kerja sopan (lampau)
+pola: [kata kerja]-ました / -ませんでした
+info: Untuk kejadian yang sudah lewat: 食べました (sudah makan), 食べませんでした (tidak makan).
+ex: {昨日|きのう} {映画|えいが} +を {見|み} ~ました。 || Kemarin saya menonton film. || 4 || ます。, ません。
+ex: {今朝|けさ} {朝|あさ}ごはん +を {食|た}べ ~ませんでした。 || Tadi pagi saya tidak sarapan. || 4 || ます。, ました。
+ex: {先週|せんしゅう} {京都|きょうと} +へ {行|い}き ~ました。 || Minggu lalu saya pergi ke Kyoto. || 4 || ます。, ません。
+
+## g5-12 | 5 | ～へ／～に 行きます | pergi ke ...
+pola: [tempat] へ / に 行きます・来ます・帰ります
+info: へ (dibaca "e") atau に menunjukkan arah tujuan. Dipakai dengan 行きます (pergi), 来ます (datang), 帰ります (pulang).
+ex: {日本|にほん} +へ {行|い}きます。 || Saya pergi ke Jepang. || 1 || を, で, が
+ex: {八時|はちじ} +に うち +へ {帰|かえ}ります。 || Saya pulang ke rumah jam 8. || 3 || を, で, が
+ex: {友達|ともだち} +が {家|いえ} +に {来|き}ました。 || Teman datang ke rumah. || 3 || を, で, の
+
+## g5-13 | 5 | ～で | di (tempat kegiatan); dengan (alat)
+pola: [tempat] で [kata kerja] / [alat] で [kata kerja]
+info: で menandai tempat terjadinya kegiatan (makan DI restoran) atau alat/cara (pergi DENGAN bus).
+ex: {図書館|としょかん} +で {勉強|べんきょう}します。 || Saya belajar di perpustakaan. || 1 || に, を, へ
+ex: バス +で {学校|がっこう} +へ {行|い}きます。 || Saya pergi ke sekolah naik bus. || 1 || を, が, の
+ex: {箸|はし} +で ご{飯|はん} +を {食|た}べます。 || Saya makan nasi dengan sumpit. || 1 || に, が, へ
+
+## g5-14 | 5 | ～と | dan; bersama
+pola: [kata benda 1] と [kata benda 2] / [orang] と [kata kerja]
+info: と menghubungkan kata benda ("A dan B") atau berarti "bersama (seseorang)".
+ex: パン +と {卵|たまご} +を {食|た}べます。 || Saya makan roti dan telur. || 1 || を, で, に
+ex: {友達|ともだち} +と {映画|えいが} +を {見|み}ました。 || Saya menonton film bersama teman. || 1 || を, で, が
+ex: {母|はは} +と {買|か}い{物|もの} +に {行|い}きます。 || Saya pergi belanja bersama ibu. || 1 || を, が, の
+
+## g5-15 | 5 | ～が 好きです | suka ...
+pola: [kata benda] が 好きです / 嫌いです / 上手です / 下手です
+info: Untuk suka/tidak suka dan pandai/tidak pandai, objeknya ditandai が (bukan を).
+ex: {私|わたし} +は {猫|ねこ} +が {好|す}き +です。 || Saya suka kucing. || 3 || を, で, に
+ex: {兄|あに} +は {料理|りょうり} +が {上手|じょうず} +です。 || Kakak laki-laki saya pandai memasak. || 3 || を, で, へ
+ex: {私|わたし} +は {野菜|やさい} +が {嫌|きら}い +です。 || Saya tidak suka sayur. || 3 || を, で, に
+
+## g5-16 | 5 | kata sifat -い | ～いです・～くないです
+pola: [kata sifat]-い です / -くない です
+info: Kata sifat -i berakhiran い. Untuk negatif, ganti い menjadi くない: 高い (mahal) → 高くない (tidak mahal).
+info: Pengecualian: いい (bagus) → よくない (tidak bagus).
+ex: {今日|きょう} +は {寒|さむ} ~くない +です。 || Hari ini tidak dingin. || 3 || い, かった, くて
+ex: この {本|ほん} +は {面白|おもしろ} ~い +です。 || Buku ini menarik. || 4 || くない, かった, な
+ex: {日本語|にほんご} +は {難|むずか}し ~くない +です。 || Bahasa Jepang tidak sulit. || 3 || い, かった, な
+
+## g5-17 | 5 | kata sifat -な | ～です・～な + kata benda
+pola: [kata sifat]-な です / [kata sifat] な [kata benda]
+info: Kata sifat -na (きれい, 静か, 有名, 元気...) memakai な bila berada di depan kata benda: 静かな町 = kota yang tenang.
+info: Negatif: 静かじゃありません (tidak tenang).
+ex: ここ +は {静|しず}か +な {町|まち} +です。 || Ini kota yang tenang. || 3 || の, い, に
+ex: {花子|はなこ}さん +は きれい +な {人|ひと} +です。 || Hanako adalah orang yang cantik. || 3 || の, い, を
+ex: この {部屋|へや} +は {静|しず}か +じゃありません。 || Kamar ini tidak tenang. || 4 || くないです。, でした。, なです。
+
+## g5-18 | 5 | kata sifat (lampau) | ～かったです・～でした
+pola: [kata sifat -i] → ～かったです / [kata sifat -na, kata benda] → ～でした
+info: Lampau kata sifat -i: ganti い menjadi かった (高い → 高かった). Kata sifat -na dan kata benda memakai でした.
+ex: {昨日|きのう} +は {暑|あつ} ~かった +です。 || Kemarin panas. || 3 || い, くない, でした
+ex: パーティー +は {楽|たの}し ~かった +です。 || Pestanya menyenangkan. || 3 || い, くない, な
+ex: {町|まち} +は にぎやか +でした。 || Kotanya (waktu itu) ramai. || 3 || かったです。, くないです。, なです。
+
+## g5-19 | 5 | ～ましょう／～ませんか | ayo ... / maukah ...?
+pola: [kata kerja]-ましょう (ayo) / -ませんか (maukah?)
+info: ～ましょう = "Ayo ..." untuk mengajak. ～ませんか = "Maukah ...?" untuk mengajak dengan lebih sopan.
+ex: いっしょ +に {帰|かえ}り ~ましょう。 || Ayo pulang bersama. || 3 || ません。, ました。
+ex: {明日|あした} {映画|えいが} +を {見|み} ~ませんか。 || Maukah besok menonton film (bersama)? || 4 || ます。, ました。
+ex: ちょっと {休|やす}み ~ましょう。 || Ayo istirahat sebentar. || 2 || ません。, ました。
+
+## g5-20 | 5 | ～たいです | ingin (melakukan) ...
+pola: [kata kerja]-ます → -たいです
+info: Ganti ます dengan たい untuk menyatakan keinginan sendiri: 行きます → 行きたいです (ingin pergi).
+ex: {日本|にほん} +へ {行|い}き ~たい +です。 || Saya ingin pergi ke Jepang. || 3 || ます, ません, ました
+ex: {冷|つめ}たい {水|みず} +が {飲|の}み ~たい +です。 || Saya ingin minum air dingin. || 4 || ます, ません, ました
+ex: {何|なに} +が {食|た}べ ~たい +です +か。 || Kamu ingin makan apa? || 3 || ます, ません, ました
+
+## g5-21 | 5 | ～てください | tolong (lakukan) ...
+pola: [kata kerja]-て ください
+info: Bentuk て + ください = permintaan sopan.
+info: Cara membuat bentuk て: 食べます → 食べて, 見ます → 見て, 書きます → 書いて, 待ちます → 待って, 読みます → 読んで, します → して, 来ます → 来て.
+ex: ちょっと {待|ま}って ください。 || Tolong tunggu sebentar. || 1 || {待|ま}ちます, {待|ま}つ, {待|ま}った
+ex: ここ +に {名前|なまえ} +を {書|か}いて ください。 || Tolong tulis nama di sini. || 4 || {書|か}きます, {書|か}く, {書|か}いた
+ex: もう {一度|いちど} {言|い}って ください。 || Tolong katakan sekali lagi. || 2 || {言|い}います, {言|い}う, {言|い}った
+
+## g5-22 | 5 | ～ています | sedang ...; keadaan
+pola: [kata kerja]-て います
+info: Menyatakan kegiatan yang sedang berlangsung (sedang makan) atau keadaan yang berlanjut (tinggal di..., sudah menikah).
+ex: {今|いま} {雨|あめ} +が {降|ふ}って います。 || Sekarang sedang hujan. || 4 || あります。, ください。, です。
+ex: {兄|あに} +は {東京|とうきょう} +に {住|す}んで います。 || Kakak laki-laki saya tinggal di Tokyo. || 5 || あります。, ください。, です。
+ex: {田中|たなか}さん +は {電話|でんわ} +を して います。 || Pak Tanaka sedang menelepon. || 5 || あります。, ください。, です。
+
+## g5-23 | 5 | ～てもいいです | boleh ...
+pola: [kata kerja]-て も いいです(か)
+info: Untuk meminta atau memberi izin: 写真を撮ってもいいですか = Bolehkah saya memotret?
+ex: {写真|しゃしん} +を {撮|と}って +も いい +です +か。 || Bolehkah saya memotret? || 3 || は, を, が
+ex: ここ +に {座|すわ}って +も いい +です。 || Boleh duduk di sini. || 3 || は, を, が
+ex: {窓|まど} +を {開|あ}けて +も いい +です +か。 || Bolehkah saya membuka jendela? || 3 || は, を, が
+
+## g5-24 | 5 | ～てはいけません | tidak boleh ...
+pola: [kata kerja]-て は いけません
+info: Larangan: ここでたばこを吸ってはいけません = Dilarang merokok di sini.
+ex: ここ +で たばこ +を {吸|す}って +は いけません。 || Tidak boleh merokok di sini. || 5 || も, を, が
+ex: {教室|きょうしつ} +で {食|た}べて +は いけません。 || Tidak boleh makan di ruang kelas. || 3 || も, を, に
+ex: {写真|しゃしん} +を {撮|と}って +は いけません。 || Tidak boleh memotret. || 3 || も, を, が
+
+## g5-25 | 5 | ～ないでください | tolong jangan ...
+pola: [kata kerja]-ない で ください
+info: Bentuk ない (negatif santai) + でください = meminta orang untuk tidak melakukan sesuatu.
+info: Contoh bentuk ない: 食べます → 食べない, 行きます → 行かない, します → しない, 来ます → 来ない.
+ex: ここ +に {車|くるま} +を {止|と}めない +で ください。 || Tolong jangan parkir mobil di sini. || 5 || て, に, を
+ex: {忘|わす}れない +で ください。 || Tolong jangan lupa. || 1 || て, に, を
+ex: {心配|しんぱい}しない +で ください。 || Tolong jangan khawatir. || 1 || て, に, を
+
+## g5-26 | 5 | ～から | karena ...
+pola: [kalimat 1] から、[kalimat 2]
+info: から setelah sebuah kalimat berarti "karena". Alasan diletakkan di depan: 暑いですから、窓を開けます = Karena panas, saya membuka jendela.
+ex: {暑|あつ}い +です +から、 {窓|まど} +を {開|あ}けます。 || Karena panas, saya membuka jendela. || 2 || まで、, が、, と、
+ex: {時間|じかん} +が ありません +から、 タクシー +で {行|い}きます。 || Karena tidak ada waktu, saya naik taksi. || 3 || まで、, を、, と、
+ex: {病気|びょうき} +です +から、 {休|やす}みます。 || Karena sakit, saya beristirahat. || 2 || まで、, が、, に、
+
+## g5-27 | 5 | ～から ～まで | dari ... sampai ...
+pola: [waktu/tempat] から [waktu/tempat] まで
+info: から = dari (titik awal), まで = sampai (titik akhir). Bisa untuk waktu maupun tempat.
+ex: {九時|くじ} +から {五時|ごじ} +まで {働|はたら}きます。 || Saya bekerja dari jam 9 sampai jam 5. || 3 || に, で, を
+ex: {家|いえ} +から {駅|えき} +まで {歩|ある}きます。 || Saya berjalan kaki dari rumah sampai stasiun. || 1 || まで, に, を
+ex: {月曜日|げつようび} +から {金曜日|きんようび} +まで {学校|がっこう} +が あります。 || Ada sekolah dari Senin sampai Jumat. || 3 || から, に, で
+
+## g5-28 | 5 | ～が、～ | tetapi ...
+pola: [kalimat 1] が、[kalimat 2]
+info: が di antara dua kalimat berarti "tetapi". Di awal kalimat bisa juga memakai でも.
+ex: {日本語|にほんご} +は {難|むずか}しい +です +が、 {面白|おもしろ}い +です。 || Bahasa Jepang sulit, tetapi menarik. || 4 || から、, と、, を、
+ex: {肉|にく} +は {好|す}き +です +が、 {魚|さかな} +は {嫌|きら}い +です。 || Saya suka daging, tetapi tidak suka ikan. || 4 || から、, と、, も、
+ex: {高|たか}い +です +が、 {買|か}います。 || Mahal, tetapi saya beli. || 2 || から、, と、, を、
+
+## g5-29 | 5 | ～より ～のほうが | B lebih ... daripada A
+pola: A より B の ほうが [kata sifat] です
+info: Membandingkan dua hal: バスより電車のほうが速いです = Kereta lebih cepat daripada bus.
+info: Untuk bertanya: A と B と どちらが ～ですか (Mana yang lebih ...?).
+ex: バス +より {電車|でんしゃ} +の ほう +が {速|はや}い +です。 || Kereta lebih cepat daripada bus. || 1 || から, まで, と
+ex: {犬|いぬ} +より {猫|ねこ} +の ほう +が {好|す}き +です。 || Saya lebih suka kucing daripada anjing. || 1 || から, まで, も
+ex: {夏|なつ} +と {冬|ふゆ} +と どちら +が {好|す}き +です +か。 || Kamu lebih suka musim panas atau musim dingin? || 4 || どこ, だれ, いつ
+
+## g5-30 | 5 | ～ね／～よ | partikel akhir: "ya" / "lho"
+pola: [kalimat] + ね / よ
+info: ね = meminta persetujuan ("..., ya?" / "..., kan?"). よ = memberi tahu informasi baru dengan yakin ("..., lho").
+ex: {今日|きょう} +は {暑|あつ}い +です +ね。 || Hari ini panas, ya. || 4 || よ。, か。, を。
+ex: この {料理|りょうり} +は おいしい +です +よ。 || Masakan ini enak, lho. || 4 || ね。, か。, を。
+ex: {明日|あした} +は {休|やす}み +です +よ。 || Besok libur, lho. || 4 || ね。, か。, を。
+
+## g5-31 | 5 | ～がほしいです | ingin (memiliki) ...
+pola: [kata benda] が ほしいです
+info: Menyatakan keinginan memiliki benda: 新しい車がほしいです = Saya ingin mobil baru. Untuk keinginan melakukan sesuatu, pakai ～たいです.
+ex: {新|あたら}しい {車|くるま} +が ほしい +です。 || Saya ingin mobil baru. || 2 || を, で, に
+ex: {何|なに} +が ほしい +です +か。 || Kamu ingin (memiliki) apa? || 1 || を, で, に
+ex: {私|わたし} +は {時間|じかん} +が ほしい +です。 || Saya ingin punya waktu. || 3 || を, で, に
+
+## g5-32 | 5 | ～に (waktu) | pada (jam/hari/tanggal)
+pola: [waktu] に [kata kerja]
+info: に dipakai untuk waktu yang spesifik: 7時に (pada jam 7), 日曜日に (pada hari Minggu).
+info: Kata seperti 今日, 明日, 毎日, 今 TIDAK memakai に.
+ex: {毎朝|まいあさ} {六時|ろくじ} +に {起|お}きます。 || Setiap pagi saya bangun jam 6. || 2 || で, を, へ
+ex: {日曜日|にちようび} +に {公園|こうえん} +へ {行|い}きます。 || Pada hari Minggu saya pergi ke taman. || 1 || で, を, が
+ex: {夜|よる} {十一時|じゅういちじ} +に {寝|ね}ます。 || Saya tidur jam 11 malam. || 2 || で, を, が
+
+## g5-33 | 5 | もう／まだ | sudah ... / belum ...
+pola: もう [kata kerja]-ました / まだ [kata kerja]-ていません
+info: もう + bentuk lampau = sudah. まだ + ～ていません = belum. Jawaban singkat "belum": まだです.
+ex: もう {昼|ひる}ご{飯|はん} +を {食|た}べました +か。 || Apakah (kamu) sudah makan siang? || 0 || まだ, よく, とても
+ex: いいえ、 まだ {食|た}べて いません。 || Belum, saya belum makan. || 1 || もう, よく, とても
+ex: {宿題|しゅくだい} +は もう {終|お}わりました。 || PR-nya sudah selesai. || 2 || まだ, よく, あまり
+
+## g5-34 | 5 | あまり～ない | tidak begitu ...
+pola: あまり + bentuk negatif
+info: あまり selalu dipakai dengan bentuk negatif: あまり好きじゃありません = tidak begitu suka.
+info: Bandingkan ぜんぜん～ない = sama sekali tidak.
+ex: {私|わたし} +は あまり テレビ +を {見|み}ません。 || Saya tidak begitu sering menonton TV. || 2 || とても, よく, たくさん
+ex: この りんご +は あまり {甘|あま}くない +です。 || Apel ini tidak begitu manis. || 3 || とても, よく, もう
+ex: {今日|きょう} +は あまり {寒|さむ}くない +です。 || Hari ini tidak begitu dingin. || 2 || とても, よく, もう
+
+## g5-35 | 5 | ～前に／～た後で | sebelum ... / sesudah ...
+pola: [kata kerja bentuk kamus] 前に / [kata kerja]-た 後で / [kata benda] の 前に・後で
+info: 寝る前に = sebelum tidur. 食べた後で = sesudah makan. Dengan kata benda pakai の: 授業の後で = sesudah pelajaran.
+ex: {寝|ね}る {前|まえ}に {歯|は} +を {磨|みが}きます。 || Saya menggosok gigi sebelum tidur. || 1 || {後|あと}で, {時|とき}に, から
+ex: {食|た}べた {後|あと}で {薬|くすり} +を {飲|の}みます。 || Saya minum obat sesudah makan. || 1 || {前|まえ}に, まで, から
+ex: {授業|じゅぎょう} +の {後|あと}で {友達|ともだち} +と {遊|あそ}びます。 || Sesudah pelajaran saya bermain dengan teman. || 2 || {前|まえ}に, まで, から
+
+## g5-36 | 5 | ～や～など | ... dan ... (dan lain-lain)
+pola: [kata benda 1] や [kata benda 2] (など)
+info: や menyebutkan beberapa contoh saja (tidak semuanya), sering diakhiri など (dan lain-lain). Bandingkan と yang menyebut semuanya.
+ex: {机|つくえ} +の {上|うえ} +に {本|ほん} +や ノート +が あります。 || Di atas meja ada buku, buku catatan, dan lain-lain. || 5 || を, で, に
+ex: りんご +や バナナ +など +を {買|か}いました。 || Saya membeli apel, pisang, dan lain-lain. || 1 || を, で, が
+ex: {休|やす}み +の {日|ひ} +は {掃除|そうじ} +や {洗濯|せんたく} +を します。 || Pada hari libur saya bersih-bersih, mencuci, dan lain-lain. || 5 || を, で, が
+
+## g5-37 | 5 | ～でしょう | mungkin ...
+pola: [kalimat bentuk biasa] + でしょう
+info: Menyatakan dugaan ("mungkin"), sering dipakai di ramalan cuaca: 明日は雨でしょう = Besok mungkin hujan.
+ex: {明日|あした} +は {雨|あめ} +でしょう。 || Besok mungkin hujan. || 3 || でした。, ません。, ください。
+ex: {田中|たなか}さん +は {来|く}る +でしょう。 || Pak Tanaka mungkin akan datang. || 3 || でした。, ません。, ください。
+ex: {東京|とうきょう} +は {寒|さむ}い +でしょう。 || Tokyo mungkin dingin. || 3 || でした。, ません。, ください。
+
+## g5-38 | 5 | bentuk kamus (santai) | 食べる・行く・する
+pola: [kata kerja]-ます → bentuk kamus
+info: Dalam percakapan santai dan di kamus, kata kerja muncul dalam bentuk kamus: 食べます → 食べる, 行きます → 行く, 飲みます → 飲む, します → する, 来ます → 来る.
+info: Golongan 1: ganti bunyi -i sebelum ます menjadi -u (飲みます → 飲む). Golongan 2: hapus ます lalu tambah る (食べます → 食べる). Tidak beraturan: する dan くる.
+ex: {毎日|まいにち} コーヒー +を {飲|の}む。 || Setiap hari (aku) minum kopi. (santai) || 3 || {飲|の}みます, {飲|の}んで, {飲|の}まない
+ex: {明日|あした} {学校|がっこう} +に {行|い}く？ || Besok (kamu) pergi ke sekolah? (santai) || 3 || {行|い}きました, {行|い}って, {行|い}きたい
+ex: {一緒|いっしょ} +に {勉強|べんきょう}する？ || Mau belajar bersama? (santai) || 2 || {勉強|べんきょう}した, {勉強|べんきょう}して, {勉強|べんきょう}しました
+
+# ===================================================================== N4
+
+## g4-01 | 4 | bentuk た (santai) | lampau bentuk biasa
+pola: [kata kerja]-た / -なかった
+info: Bentuk た adalah versi santai dari ～ました. Cara membuatnya sama seperti bentuk て, hanya て→た dan で→だ: 食べて→食べた, 行って→行った, 読んで→読んだ.
+info: Negatif lampau santai: ～なかった (食べなかった = tidak makan).
+ex: {昨日|きのう} {映画|えいが} +を {見|み}た。 || Kemarin aku menonton film. (santai) || 3 || {見|み}る。, {見|み}て。, {見|み}ない。
+ex: {宿題|しゅくだい} +は もう {終|お}わった？ || PR-nya sudah selesai? (santai) || 3 || {終|お}わる？, {終|お}わって？, {終|お}わらない？
+ex: {今朝|けさ} +は {何|なに} +も {食|た}べなかった。 || Tadi pagi aku tidak makan apa-apa. || 4 || {食|た}べた。, {食|た}べる。, {食|た}べて。
+
+## g4-02 | 4 | bentuk ない (santai) | negatif bentuk biasa
+pola: [kata kerja]-ない
+info: Bentuk ない adalah versi santai dari ～ません.
+info: Golongan 1: bunyi -u menjadi -a + ない (行く→行かない, 飲む→飲まない, 買う→買わない). Golongan 2: hapus る + ない (食べる→食べない). Tidak beraturan: する→しない, 来る→来ない.
+ex: {今日|きょう} +は {学校|がっこう} +に {行|い}かない。 || Hari ini aku tidak pergi ke sekolah. || 4 || {行|い}く。, {行|い}った。, {行|い}って。
+ex: {私|わたし} +は お{酒|さけ} +を {飲|の}まない。 || Aku tidak minum alkohol. || 4 || {飲|の}む。, {飲|の}んだ。, {飲|の}みたい。
+ex: {日曜日|にちようび} +は {何|なに} +も しない。 || Hari Minggu aku tidak melakukan apa-apa. || 4 || する。, した。, して。
+
+## g4-03 | 4 | ～たことがあります | pernah ...
+pola: [kata kerja]-た ことが あります
+info: Menyatakan pengalaman: 日本へ行ったことがあります = Saya pernah pergi ke Jepang.
+info: Negatif: ～たことがありません = belum pernah.
+ex: {私|わたし} +は {富士山|ふじさん} +に {登|のぼ}った こと +が あります。 || Saya pernah mendaki Gunung Fuji. || 5
+ex: {寿司|すし} +を {食|た}べた こと +が あります +か。 || Pernahkah kamu makan sushi? || 3
+ex: {飛行機|ひこうき} +に {乗|の}った こと +が ありません。 || Saya belum pernah naik pesawat. || 3
+opts: もの, ところ, ほう
+
+## g4-04 | 4 | ～たり～たりします | ... dan ... (antara lain)
+pola: [kata kerja]-たり [kata kerja]-たり します
+info: Menyebut beberapa contoh kegiatan, tidak semuanya: 週末は本を読んだり映画を見たりします = Akhir pekan saya membaca buku, menonton film, dan lain-lain.
+ex: {週末|しゅうまつ} +は {本|ほん} +を {読|よ}んだり {映画|えいが} +を {見|み}たり します。 || Akhir pekan saya membaca buku, menonton film, dan sebagainya. || 7 || {見|み}て, {見|み}た, {見|み}ます
+ex: {休|やす}み +の {日|ひ} +は {掃除|そうじ}したり {洗濯|せんたく}したり します。 || Pada hari libur saya bersih-bersih, mencuci, dan lain-lain. || 5 || {洗濯|せんたく}して, {洗濯|せんたく}した, {洗濯|せんたく}します
+ex: パーティー +で {歌|うた}ったり {踊|おど}ったり しました。 || Di pesta kami bernyanyi, menari, dan sebagainya. || 3 || {踊|おど}って, {踊|おど}った, {踊|おど}ります
+
+## g4-05 | 4 | ～ながら | sambil ...
+pola: [kata kerja]-ます → -ながら [kata kerja]
+info: Dua kegiatan dilakukan bersamaan oleh orang yang sama. Kegiatan utama diletakkan di akhir: 音楽を聞きながら勉強します = Saya belajar sambil mendengarkan musik.
+ex: {音楽|おんがく} +を {聞|き}きながら {勉強|べんきょう}します。 || Saya belajar sambil mendengarkan musik. || 2 || {聞|き}いたり, {聞|き}くのに, {聞|き}けば
+ex: テレビ +を {見|み}ながら ご{飯|はん} +を {食|た}べます。 || Saya makan sambil menonton TV. || 2 || {見|み}たり, {見|み}るのに, {見|み}れば
+ex: {歩|ある}きながら {電話|でんわ}しない +で ください。 || Tolong jangan menelepon sambil berjalan. || 0 || {歩|ある}いたり, {歩|ある}くのに, {歩|ある}けば
+
+## g4-06 | 4 | ～てから | setelah ..., (baru) ...
+pola: [kata kerja]-て から [kata kerja]
+info: Menekankan urutan: kegiatan pertama selesai dulu, baru kegiatan kedua. 手を洗ってから食べます = Saya makan setelah mencuci tangan.
+ex: {手|て} +を {洗|あら}って +から {食|た}べます。 || Saya makan setelah mencuci tangan. || 3 || まで, ので, ながら
+ex: {宿題|しゅくだい} +を して +から {遊|あそ}びます。 || Saya bermain setelah mengerjakan PR. || 3 || まで, ので, ながら
+ex: {日本|にほん} +に {来|き}て +から、 {日本語|にほんご} +を {勉強|べんきょう}し{始|はじ}めました。 || Setelah datang ke Jepang, saya mulai belajar bahasa Jepang. || 3 || まで、, ので、, ながら、
+
+## g4-07 | 4 | ～つもりです | berencana ...
+pola: [kata kerja bentuk kamus / -ない] つもりです
+info: Menyatakan rencana atau niat yang sudah dipikirkan: 来年日本へ行くつもりです = Saya berencana pergi ke Jepang tahun depan.
+ex: {来年|らいねん} {日本|にほん} +へ {行|い}く つもり +です。 || Saya berencana pergi ke Jepang tahun depan. || 4
+ex: {夏休|なつやす}み +に アルバイト +を する つもり +です。 || Saya berencana kerja paruh waktu saat libur musim panas. || 5
+ex: もう たばこ +は {吸|す}わない つもり +です。 || Saya berniat tidak merokok lagi. || 4
+opts: ため, こと, ほう
+
+## g4-08 | 4 | bentuk ～よう | ayo (santai); berniat ...
+pola: [kata kerja]-よう / -よう と思います
+info: Bentuk ajakan santai (versi santai ～ましょう): 食べよう = ayo makan. Golongan 1: -u → -ou (行く→行こう, 飲む→飲もう). Golongan 2: る → よう (食べる→食べよう). する→しよう, 来る→来よう.
+info: Dengan と思います artinya "berniat": 日本へ行こうと思います = Saya berniat pergi ke Jepang.
+ex: {一緒|いっしょ} +に {帰|かえ}ろう。 || Ayo pulang bersama. (santai) || 2 || {帰|かえ}る。, {帰|かえ}った。, {帰|かえ}らない。
+ex: ちょっと {休|やす}もう +か。 || Bagaimana kalau kita istirahat sebentar? (santai) || 1 || {休|やす}んだ, {休|やす}んで, {休|やす}めば
+ex: {週末|しゅうまつ} +は {部屋|へや} +を {掃除|そうじ}しよう +と {思|おも}います。 || Akhir pekan ini saya berniat membersihkan kamar. || 4 || {掃除|そうじ}した, {掃除|そうじ}して, {掃除|そうじ}しない
+
+## g4-09 | 4 | bentuk potensial | bisa ...
+pola: [kata kerja] → ～える / ～られる
+info: Menyatakan kemampuan. Golongan 1: -u → -eru (書く→書ける, 話す→話せる, 飲む→飲める). Golongan 2: る → られる (食べる→食べられる, 見る→見られる). する→できる, 来る→来られる.
+info: Hal yang bisa dilakukan biasanya ditandai が: 日本語が話せます = Saya bisa berbicara bahasa Jepang.
+ex: {私|わたし} +は {日本語|にほんご} +が {少|すこ}し {話|はな}せます。 || Saya bisa sedikit berbicara bahasa Jepang. || 5 || {話|はな}しました。, {話|はな}して。, {話|はな}しません。
+ex: {辛|から}い {料理|りょうり} +が {食|た}べられます +か。 || Apakah kamu bisa makan masakan pedas? || 3 || {食|た}べます, {食|た}べました, {食|た}べて
+ex: {漢字|かんじ} +が {読|よ}めません。 || Saya tidak bisa membaca kanji. || 2 || {読|よ}みません。, {読|よ}みました。, {読|よ}んで。
+
+## g4-10 | 4 | ～ことができます | bisa (melakukan) ...
+pola: [kata kerja bentuk kamus] ことが できます
+info: Cara lain menyatakan kemampuan atau kemungkinan, sedikit lebih formal dari bentuk potensial: ピアノを弾くことができます = Saya bisa bermain piano.
+ex: {私|わたし} +は ピアノ +を {弾|ひ}く こと +が できます。 || Saya bisa bermain piano. || 5
+ex: ここ +で {写真|しゃしん} +を {撮|と}る こと +が できます +か。 || Apakah di sini bisa memotret? || 5
+ex: この {図書館|としょかん} +で {本|ほん} +を {借|か}りる こと +が できます。 || Di perpustakaan ini bisa meminjam buku. || 6
+opts: もの, ところ, ほう
+
+## g4-11 | 4 | ～なければなりません | harus ...
+pola: [kata kerja]-ない → -なければ なりません
+info: Menyatakan kewajiban. Ganti ない dengan なければなりません: 行かない → 行かなければなりません.
+info: Versi santai sehari-hari: ～なきゃ / ～なくちゃ (行かなきゃ = harus pergi).
+ex: {明日|あした} +は {早|はや}く {起|お}きなければ なりません。 || Besok saya harus bangun pagi-pagi. || 3 || {起|お}きれば, {起|お}きても, {起|お}きないで
+ex: {薬|くすり} +を {飲|の}まなければ なりません。 || Saya harus minum obat. || 2 || {飲|の}めば, {飲|の}んでも, {飲|の}まないで
+ex: {毎日|まいにち} {日本語|にほんご} +を {勉強|べんきょう}しなければ なりません。 || Saya harus belajar bahasa Jepang setiap hari. || 3 || {勉強|べんきょう}すれば, {勉強|べんきょう}しても, {勉強|べんきょう}しないで
+
+## g4-12 | 4 | ～なくてもいいです | tidak perlu ...
+pola: [kata kerja]-ない → -なくても いいです
+info: Menyatakan tidak ada keharusan: 明日は来なくてもいいです = Besok tidak perlu datang.
+ex: {明日|あした} +は {来|こ}なくても いい +です。 || Besok tidak perlu datang. || 2 || {来|こ}なければ, {来|き}ても, {来|こ}ないで
+ex: {靴|くつ} +を {脱|ぬ}がなくても いい +です。 || Tidak perlu melepas sepatu. || 2 || {脱|ぬ}がなければ, {脱|ぬ}いでも, {脱|ぬ}がないで
+ex: {全部|ぜんぶ} {食|た}べなくても いい +です +よ。 || Tidak perlu dihabiskan semua, lho. || 1 || {食|た}べなければ, {食|た}べても, {食|た}べないで
+
+## g4-13 | 4 | ～ほうがいいです | sebaiknya ...
+pola: [kata kerja]-た ほうが いいです / -ない ほうが いいです
+info: Memberi saran: 早く寝たほうがいいです = Sebaiknya cepat tidur. Saran untuk tidak melakukan sesuatu: ～ないほうがいいです.
+ex: {早|はや}く {寝|ね}た ほう +が いい +です +よ。 || Sebaiknya kamu cepat tidur. || 2
+ex: {病院|びょういん} +へ {行|い}った ほう +が いい +です。 || Sebaiknya pergi ke rumah sakit. || 3
+ex: {夜|よる} {一人|ひとり} +で {歩|ある}かない ほう +が いい +です。 || Sebaiknya jangan berjalan sendirian di malam hari. || 4
+opts: こと, もの, ところ
+
+## g4-14 | 4 | ～と思います | saya pikir ...
+pola: [kalimat bentuk biasa] と 思います
+info: Menyampaikan pendapat atau dugaan. Kalimat sebelum と memakai bentuk biasa (santai). Kata benda dan kata sifat -na ditambah だ: 明日は雨だと思います = Saya pikir besok hujan.
+ex: {明日|あした} +は {雨|あめ} +だ +と {思|おも}います。 || Saya pikir besok akan hujan. || 4
+ex: この {映画|えいが} +は {面白|おもしろ}い +と {思|おも}います。 || Menurut saya film ini menarik. || 4
+ex: {田中|たなか}さん +は もう {帰|かえ}った +と {思|おも}います。 || Saya rasa Pak Tanaka sudah pulang. || 4
+opts: を, に, が
+
+## g4-15 | 4 | ～と言いました | berkata bahwa ...
+pola: [kalimat] と 言いました
+info: Mengutip perkataan orang lain. Kutipan tidak langsung memakai bentuk biasa: 先生は明日テストがあると言いました = Guru berkata bahwa besok ada tes.
+info: Untuk menanyakan nama sesuatu: これは日本語で何と言いますか = Ini dalam bahasa Jepang disebut apa?
+ex: {先生|せんせい} +は {明日|あした} テスト +が ある +と {言|い}いました。 || Guru berkata bahwa besok ada tes. || 6
+ex: {友達|ともだち} +は {来週|らいしゅう} {国|くに} +へ {帰|かえ}る +と {言|い}いました。 || Teman saya berkata bahwa minggu depan ia pulang ke negaranya. || 6
+ex: これ +は {日本語|にほんご} +で {何|なん} +と {言|い}います +か。 || Ini dalam bahasa Jepang disebut apa? || 5
+opts: を, に, が
+
+## g4-16 | 4 | ～そうです (kelihatannya) | kelihatannya ...
+pola: [kata sifat -i tanpa い / kata sifat -na] そうです / [kata kerja]-ます → そうです
+info: Menyatakan kesan dari apa yang terlihat: おいしそう (kelihatannya enak), 雨が降りそう (sepertinya akan hujan). Pengecualian: いい → よさそう.
+ex: この ケーキ +は おいし ~そう +です +ね。 || Kue ini kelihatannya enak, ya. || 4 || い, かった, くて
+ex: {雨|あめ} +が {降|ふ}り ~そう +です。 || Sepertinya akan turun hujan. || 3 || ます, ました, たい
+ex: {田中|たなか}さん +は {忙|いそが}し ~そう +です。 || Pak Tanaka kelihatannya sibuk. || 3 || い, かった, くて
+
+## g4-17 | 4 | ～そうです (katanya) | katanya ...
+pola: [kalimat bentuk biasa] そうです
+info: Menyampaikan informasi yang didengar dari orang lain atau berita: 明日は雪が降るそうです = Katanya besok akan turun salju.
+info: Bedakan dengan そう "kelihatannya": 降りそう (kelihatannya akan turun) vs 降るそう (katanya akan turun).
+ex: {天気予報|てんきよほう} +に よると、 {明日|あした} +は {雪|ゆき} +が {降|ふ}る +そう +です。 || Menurut ramalan cuaca, katanya besok akan turun salju. || 8
+ex: {山田|やまだ}さん +は {来月|らいげつ} {結婚|けっこん}する +そう +です。 || Katanya Pak Yamada akan menikah bulan depan. || 4
+ex: あの {店|みせ} +の ラーメン +は おいしい +そう +です。 || Katanya ramen di toko itu enak. || 6
+opts: たい, ながら, たり
+
+## g4-18 | 4 | ～たら | kalau / setelah ...
+pola: [kata kerja / kata sifat]-たら、...
+info: Bentuk た + ら. Artinya "kalau (seandainya)" atau "setelah (nanti)": 雨が降ったら、行きません = Kalau hujan, saya tidak pergi. 駅に着いたら、電話してください = Kalau sudah sampai di stasiun, tolong telepon.
+ex: {雨|あめ} +が {降|ふ}ったら、 {行|い}きません。 || Kalau hujan, saya tidak pergi. || 2 || {降|ふ}って、, {降|ふ}るので、, {降|ふ}りながら、
+ex: {駅|えき} +に {着|つ}いたら、 {電話|でんわ}して ください。 || Kalau sudah sampai di stasiun, tolong telepon. || 2 || {着|つ}いて、, {着|つ}くので、, {着|つ}きながら、
+ex: お{金|かね} +が あったら、 {旅行|りょこう}したい +です。 || Kalau punya uang, saya ingin berwisata. || 2 || あって、, あるので、, ありながら、
+
+## g4-19 | 4 | ～ば | jika ...
+pola: [kata kerja] -u → -eba / [kata sifat -i] -い → -ければ
+info: Bentuk syarat: 行く→行けば, 食べる→食べれば, する→すれば, 安い→安ければ.
+info: ～ばいい artinya "sebaiknya / cukup ... saja": どうすればいいですか = Sebaiknya saya bagaimana?
+ex: {安|やす}ければ {買|か}います。 || Kalau murah, saya beli. || 0 || {安|やす}くて, {安|やす}いのに, {安|やす}かった
+ex: {毎日|まいにち} {練習|れんしゅう}すれば、 {上手|じょうず} +に なります。 || Kalau berlatih setiap hari, kamu akan jadi mahir. || 1 || {練習|れんしゅう}しても、, {練習|れんしゅう}するのに、, {練習|れんしゅう}したり、
+ex: どう すれば いい +です +か。 || Sebaiknya saya bagaimana? || 1 || しても, するのに, したり
+
+## g4-20 | 4 | ～と (syarat) | kalau ..., (pasti) ...
+pola: [kata kerja bentuk kamus] と、...
+info: Untuk akibat yang selalu atau pasti terjadi, juga untuk petunjuk arah: このボタンを押すと、お茶が出ます = Kalau tombol ini ditekan, teh akan keluar.
+ex: この ボタン +を {押|お}す +と、 お{茶|ちゃ} +が {出|で}ます。 || Kalau tombol ini ditekan, teh akan keluar. || 4
+ex: {右|みぎ} +に {曲|ま}がる +と、 {駅|えき} +が あります。 || Kalau belok kanan, ada stasiun. || 3
+ex: {春|はる} +に なる +と、 {桜|さくら} +が {咲|さ}きます。 || Setiap kali musim semi tiba, bunga sakura mekar. || 3
+opts: を、, に、, も、
+
+## g4-21 | 4 | ～ても | meskipun ...
+pola: [kata kerja]-て も / [kata sifat -i]-くても / [kata benda, kata sifat -na] でも
+info: Artinya "meskipun / walaupun": 雨が降っても、行きます = Meskipun hujan, saya tetap pergi.
+ex: {雨|あめ} +が {降|ふ}って +も、 {試合|しあい} +は あります。 || Meskipun hujan, pertandingannya tetap ada. || 3
+ex: {高|たか}くて +も、 この カメラ +が ほしい +です。 || Meskipun mahal, saya ingin kamera ini. || 1
+ex: {何度|なんど} {聞|き}いて +も、 {分|わ}かりません。 || Meskipun sudah mendengar berkali-kali, saya tidak mengerti. || 2
+opts: は、, が、, を、
+
+## g4-22 | 4 | ～ので | karena ... (halus)
+pola: [kalimat bentuk biasa] ので、... (kata benda / kata sifat -na + なので)
+info: Seperti から, artinya "karena", tetapi terdengar lebih halus dan sopan. Cocok untuk memberi alasan atau meminta izin: 頭が痛いので、早く帰ります = Karena sakit kepala, saya pulang lebih awal.
+ex: {頭|あたま} +が {痛|いた}い +ので、 {早|はや}く {帰|かえ}ります。 || Karena sakit kepala, saya pulang lebih awal. || 3
+ex: {明日|あした} +は {休|やす}み +な +ので、 {遊|あそ}び +に {行|い}きます。 || Karena besok libur, saya pergi bermain. || 4
+ex: {電車|でんしゃ} +が {遅|おく}れた +ので、 {遅刻|ちこく}しました。 || Karena keretanya terlambat, saya datang terlambat. || 3
+opts: のに、, ても、, ながら、
+
+## g4-23 | 4 | ～のに | padahal ...
+pola: [kalimat bentuk biasa] のに、... (kata benda / kata sifat -na + なのに)
+info: Menyatakan hasil yang berlawanan dengan harapan, sering disertai rasa kecewa: たくさん勉強したのに、テストは悪かったです = Padahal sudah banyak belajar, tesnya jelek.
+ex: たくさん {勉強|べんきょう}した +のに、 テスト +は {悪|わる}かった +です。 || Padahal sudah banyak belajar, tesnya jelek. || 2
+ex: {約束|やくそく}した +のに、 {彼|かれ} +は {来|き}ませんでした。 || Padahal sudah berjanji, dia tidak datang. || 1
+ex: {日曜日|にちようび} +な +のに、 {会社|かいしゃ} +へ {行|い}きました。 || Padahal hari Minggu, saya pergi ke kantor. || 2
+opts: ので、, から、, たら、
+
+## g4-24 | 4 | あげる・くれる・もらう | memberi & menerima
+pola: A は B に [benda] を あげます / [orang] が 私に [benda] を くれます / 私は B に [benda] を もらいます
+info: あげる = memberi (dari saya atau orang lain kepada orang lain). くれる = orang lain memberi kepada saya (atau keluarga saya). もらう = menerima.
+info: 私は友達に本をあげました (Saya memberi teman buku). 友達は私に本をくれました (Teman memberi saya buku). 私は友達に本をもらいました (Saya menerima buku dari teman).
+ex: {私|わたし} +は {妹|いもうと} +に {花|はな} +を あげました。 || Saya memberi adik perempuan saya bunga. || 6 || くれました。, もらいました。, ありました。
+ex: {友達|ともだち} +が {私|わたし} +に {本|ほん} +を くれました。 || Teman saya memberi saya buku. || 6 || あげました。, もらいました。, ありました。
+ex: {私|わたし} +は {父|ちち} +に {時計|とけい} +を もらいました。 || Saya mendapat jam tangan dari ayah. || 6 || あげました。, くれました。, ありました。
+
+## g4-25 | 4 | ～てあげる・～てくれる・～てもらう | melakukan sesuatu untuk orang lain
+pola: [kata kerja]-て あげます / くれます / もらいます
+info: Sama seperti あげる・くれる・もらう, tetapi yang diberikan adalah perbuatan (kebaikan): 友達が手伝ってくれました = Teman (berbaik hati) membantu saya. 母に作ってもらいました = Saya dibuatkan oleh ibu.
+ex: {友達|ともだち} +が {宿題|しゅくだい} +を {手伝|てつだ}って くれました。 || Teman membantu saya mengerjakan PR. || 5 || あげました。, もらいました。, いました。
+ex: {私|わたし} +は {弟|おとうと} +に {本|ほん} +を {読|よ}んで あげました。 || Saya membacakan buku untuk adik laki-laki saya. || 7 || くれました。, もらいました。, いました。
+ex: {母|はは} +に お{弁当|べんとう} +を {作|つく}って もらいました。 || Saya dibuatkan bekal oleh ibu. || 5 || あげました。, くれました。, いました。
+
+## g4-26 | 4 | ～ようになる | jadi (bisa) ...
+pola: [kata kerja bentuk kamus / potensial] ように なります
+info: Menyatakan perubahan kemampuan atau kebiasaan: 日本語が話せるようになりました = Saya sudah jadi bisa berbicara bahasa Jepang.
+ex: {日本語|にほんご} +が {話|はな}せる よう +に なりました。 || Saya sudah jadi bisa berbicara bahasa Jepang. || 3
+ex: {毎朝|まいあさ} {走|はし}る よう +に なりました。 || Sekarang saya jadi terbiasa berlari setiap pagi. || 2
+ex: {漢字|かんじ} +が {読|よ}める よう +に なりたい +です。 || Saya ingin bisa membaca kanji. || 3
+opts: ほう, つもり, ところ
+
+## g4-27 | 4 | ～ために | untuk / demi ...
+pola: [kata kerja bentuk kamus] ために / [kata benda] の ために
+info: Menyatakan tujuan: 日本で働くために、日本語を勉強しています = Saya belajar bahasa Jepang untuk bekerja di Jepang. Dengan kata benda: 家族のために = demi keluarga.
+ex: {日本|にほん} +で {働|はたら}く ために、 {日本語|にほんご} +を {勉強|べんきょう}して います。 || Saya belajar bahasa Jepang untuk bekerja di Jepang. || 3
+ex: {家族|かぞく} +の ために、 {一生懸命|いっしょうけんめい} {働|はたら}きます。 || Saya bekerja keras demi keluarga. || 2
+ex: {健康|けんこう} +の ために、 {毎日|まいにち} {歩|ある}いて います。 || Demi kesehatan, saya berjalan kaki setiap hari. || 2
+opts: ので、, のに、, ながら、
+
+## g4-28 | 4 | ～てしまう | terlanjur ...; ... sampai habis
+pola: [kata kerja]-て しまいます (santai: ～ちゃう)
+info: (1) Menyesali sesuatu yang tidak disengaja: 財布をなくしてしまいました = Dompet saya (tak sengaja) hilang. (2) Menyelesaikan sampai tuntas: 全部食べてしまいました = Saya sudah menghabiskan semuanya.
+ex: {財布|さいふ} +を なくして しまいました。 || Dompet saya (tak sengaja) hilang. || 3
+ex: ケーキ +を {全部|ぜんぶ} {食|た}べて しまいました。 || Saya sudah menghabiskan semua kuenya. || 4
+ex: {電車|でんしゃ} +に {傘|かさ} +を {忘|わす}れて しまいました。 || Payung saya ketinggalan di kereta. || 5
+opts: おきました。, みました。, あげました。
+
+## g4-29 | 4 | ～ておく | ... dulu (sebagai persiapan)
+pola: [kata kerja]-て おきます (santai: ～とく)
+info: Melakukan sesuatu lebih dulu sebagai persiapan, atau membiarkan suatu keadaan tetap begitu: 旅行の前にホテルを予約しておきます = Sebelum berwisata, saya memesan hotel dulu.
+ex: {旅行|りょこう} +の {前|まえ} +に ホテル +を {予約|よやく}して おきます。 || Sebelum berwisata, saya memesan hotel dulu. || 7 || しまいます。, みます。, あげます。
+ex: {友達|ともだち} +が {来|く}る +から、 ビール +を {買|か}って おきます。 || Karena teman akan datang, saya membeli bir dulu. || 7 || しまいます。, みます。, あげます。
+ex: {窓|まど} +を {開|あ}けて おいて ください。 || Tolong biarkan jendelanya terbuka. || 3 || しまって, みて, あげて
+
+## g4-30 | 4 | ～かもしれません | mungkin ...
+pola: [kalimat bentuk biasa] かもしれません (kata benda / kata sifat -na tanpa だ)
+info: Menyatakan kemungkinan, kurang yakin dibandingkan でしょう: 明日は雨かもしれません = Besok mungkin hujan. Versi santai: ～かもしれない / ～かも.
+ex: {明日|あした} +は {雨|あめ} +かもしれません。 || Besok mungkin hujan. || 3 || でした。, ですか。, ません。
+ex: {彼|かれ} +は {来|こ}ない +かもしれません。 || Dia mungkin tidak datang. || 3 || でした。, ください。, ましょう。
+ex: その {話|はなし} +は {本当|ほんとう} +かもしれません。 || Cerita itu mungkin benar. || 4 || ください。, ましょう。, ません。

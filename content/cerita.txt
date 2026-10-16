@@ -1,0 +1,103 @@
+# Cerita pendek untuk latihan membaca & mendengar.
+# "## id | level | judul Jepang | judul Indonesia"
+# Baris kalimat: token token ... || terjemahan   (token "@A" di awal = nama pembicara)
+# q: pertanyaan | pilihan | *pilihan benar | pilihan
+
+## s5-01 | 5 | わたしの いちにち | Satu hari saya
+{私|わたし} +は アニ +です。 || Saya Ani.
+インドネシア +から {来|き}ました。 || Saya datang dari Indonesia.
+{今|いま}、 {東京|とうきょう} +で {日本語|にほんご} +を {勉強|べんきょう}して います。 || Sekarang saya sedang belajar bahasa Jepang di Tokyo.
+{毎朝|まいあさ} {七時|しちじ} +に {起|お}きます。 || Setiap pagi saya bangun jam tujuh.
+{朝|あさ}ごはん +は パン +と コーヒー +です。 || Sarapan saya roti dan kopi.
+{八時|はちじ} +に {電車|でんしゃ} +で {学校|がっこう} +へ {行|い}きます。 || Jam delapan saya pergi ke sekolah naik kereta.
+{授業|じゅぎょう} +は {九時|くじ} +から {十二時|じゅうにじ} +まで +です。 || Pelajarannya dari jam sembilan sampai jam dua belas.
+{昼|ひる} +は {友達|ともだち} +と {食堂|しょくどう} +で {食|た}べます。 || Siang hari saya makan bersama teman di kantin.
+{午後|ごご} +は {図書館|としょかん} +で {本|ほん} +を {読|よ}みます。 || Sore hari saya membaca buku di perpustakaan.
+{夜|よる} {十一時|じゅういちじ} +に {寝|ね}ます。 || Saya tidur jam sebelas malam.
+q: Ani berasal dari mana? | Jepang | *Indonesia | Tiongkok
+q: Ani pergi ke sekolah naik apa? | Bus | Sepeda | *Kereta
+q: Di mana Ani membaca buku? | *Perpustakaan | Kantin | Rumah
+
+## s5-02 | 5 | わたしの かぞく | Keluarga saya
+{私|わたし} +の {家族|かぞく} +は {五人|ごにん} +です。 || Keluarga saya ada lima orang.
+{父|ちち} +と {母|はは} +と {兄|あに} +と {妹|いもうと} +と {私|わたし} +です。 || Ayah, ibu, kakak laki-laki, adik perempuan, dan saya.
+{父|ちち} +は {会社|かいしゃ} +で {働|はたら}いて います。 || Ayah saya bekerja di perusahaan.
+{母|はは} +は {料理|りょうり} +が {上手|じょうず} +です。 || Ibu saya pandai memasak.
+{兄|あに} +は {大学生|だいがくせい} +です。 || Kakak laki-laki saya mahasiswa.
+{兄|あに} +は サッカー +が {大好|だいす}き +です。 || Kakak saya sangat suka sepak bola.
+{妹|いもうと} +は {十歳|じゅっさい} +です。 || Adik perempuan saya berumur sepuluh tahun.
+{妹|いもうと} +は {猫|ねこ} +が {好|す}き +です。 || Adik perempuan saya suka kucing.
+{家|いえ} +に {猫|ねこ} +が {二匹|にひき} います。 || Di rumah ada dua ekor kucing.
+{日曜日|にちようび} +は {家族|かぞく} +で {公園|こうえん} +へ {行|い}きます。 || Hari Minggu kami sekeluarga pergi ke taman.
+q: Berapa orang anggota keluarga ini? | Empat | *Lima | Enam
+q: Siapa yang pandai memasak? | Ayah | *Ibu | Kakak
+q: Ada berapa ekor kucing di rumah? | Satu | *Dua | Tiga
+
+## s5-03 | 5 | かいもの | Belanja
+{今日|きょう} +は {土曜日|どようび} +です。 || Hari ini hari Sabtu.
+{私|わたし} +は {友達|ともだち} +の ユキさん +と デパート +へ {行|い}きました。 || Saya pergi ke toserba bersama teman saya, Yuki.
+デパート +は {人|ひと} +が {多|おお}かった +です。 || Toserbanya ramai sekali.
+{私|わたし} +は {青|あお}い シャツ +を {買|か}いました。 || Saya membeli kemeja biru.
+シャツ +は {三千円|さんぜんえん} +でした。 || Kemejanya tiga ribu yen.
+ユキさん +は {靴|くつ} +を {見|み}ました +が、 {買|か}いませんでした。 || Yuki melihat-lihat sepatu, tetapi tidak membelinya.
+{靴|くつ} +は とても {高|たか}かった +です。 || Sepatunya sangat mahal.
+それから、 {喫茶店|きっさてん} +で ケーキ +を {食|た}べました。 || Setelah itu, kami makan kue di kafe.
+ケーキ +は {甘|あま}くて おいしかった +です。 || Kuenya manis dan enak.
+とても {楽|たの}しい {一日|いちにち} +でした。 || Hari yang sangat menyenangkan.
+q: Hari ini hari apa? | Minggu | *Sabtu | Jumat
+q: Apa yang dibeli "saya"? | Sepatu | *Kemeja biru | Kue
+q: Mengapa Yuki tidak membeli sepatu? | Tidak suka warnanya | *Sangat mahal | Tokonya tutup
+
+## s5-04 | 5 | レストランで | Di restoran
+@A すみません、 メニュー +を ください。 || A: Permisi, tolong minta menunya.
+@B はい、 どうぞ。 || B: Ya, silakan.
+@A この カレー +は {辛|から}い +です +か。 || A: Apakah kari ini pedas?
+@B いいえ、 あまり {辛|から}くない +です。 || B: Tidak, tidak begitu pedas.
+@A じゃ、 カレー +を ください。 || A: Kalau begitu, saya pesan kari.
+@B お{飲|の}み{物|もの} +は いかが +です +か。 || B: Minumnya mau apa?
+@A {冷|つめ}たい {水|みず} +を お{願|ねが}いします。 || A: Air dingin, tolong.
+@B はい、 ちょっと {待|ま}って ください。 || B: Baik, mohon tunggu sebentar.
+@A ごちそうさまでした。 おいしかった +です。 || A: Terima kasih atas makanannya. Enak sekali.
+@B ありがとう ございました。 || B: Terima kasih banyak.
+q: Apa yang dipesan A? | Ramen | *Kari | Sushi
+q: Apakah karinya pedas? | Sangat pedas | *Tidak begitu pedas | Manis
+q: Minuman apa yang diminta A? | Teh | Kopi | *Air dingin
+
+## s5-05 | 5 | にほんの ふゆ | Musim dingin di Jepang
+{日本|にほん} +の {冬|ふゆ} +は とても {寒|さむ}い +です。 || Musim dingin di Jepang sangat dingin.
+インドネシア +には {冬|ふゆ} +が ありません。 || Di Indonesia tidak ada musim dingin.
+{私|わたし} +は {初|はじ}めて {雪|ゆき} +を {見|み}ました。 || Saya melihat salju untuk pertama kali.
+{雪|ゆき} +は {白|しろ}くて きれい +でした。 || Saljunya putih dan indah.
+{外|そと} +は {寒|さむ}い +です +から、 {厚|あつ}い コート +を {着|き}ます。 || Karena di luar dingin, saya memakai mantel tebal.
+{帽子|ぼうし} +も かぶります。 || Saya juga memakai topi.
+{家|いえ} +に {帰|かえ}って、 {温|あたた}かい お{茶|ちゃ} +を {飲|の}みます。 || Saya pulang ke rumah, lalu minum teh hangat.
+{冬|ふゆ} +は {寒|さむ}い +です +が、 {私|わたし} +は {冬|ふゆ} +が {好|す}き +です。 || Musim dingin itu dingin, tetapi saya suka musim dingin.
+q: Apakah di Indonesia ada musim dingin? | Ada | *Tidak ada | Kadang-kadang
+q: Apa yang dipakai karena cuaca dingin? | *Mantel tebal | Kemeja | Rok
+q: Apakah penulis suka musim dingin? | *Suka | Tidak suka | Tidak tahu
+
+## s4-01 | 4 | はじめての アルバイト | Kerja paruh waktu pertama
+{先月|せんげつ}から、 {駅|えき} +の {近|ちか}く +の コンビニ +で アルバイト +を して います。 || Sejak bulan lalu, saya kerja paruh waktu di minimarket dekat stasiun.
+{最初|さいしょ} +は {日本語|にほんご} +が よく {分|わ}からなかった +ので、 {大変|たいへん} +でした。 || Awalnya saya tidak begitu paham bahasa Jepang, jadi berat sekali.
+でも、 {店長|てんちょう} +が {優|やさ}しく {教|おし}えて くれました。 || Tapi manajer toko dengan baik hati mengajari saya.
+{今|いま} +は お{客|きゃく}さん +と {話|はな}せる よう +に なりました。 || Sekarang saya sudah bisa berbicara dengan pelanggan.
+{一度|いちど}、 お{釣|つ}り +を {間違|まちが}えて しまいました。 || Pernah sekali saya salah memberi uang kembalian.
+でも、 {店長|てんちょう} +は {大丈夫|だいじょうぶ}だ +と {言|い}って くれました。 || Tapi manajer berkata tidak apa-apa.
+アルバイト +の お{金|かね} +で、 {新|あたら}しい {自転車|じてんしゃ} +を {買|か}う つもり +です。 || Dengan uang hasil kerja, saya berencana membeli sepeda baru.
+{仕事|しごと} +は {大変|たいへん} +です +が、 {楽|たの}しい +です。 || Pekerjaannya berat, tetapi menyenangkan.
+q: Di mana penulis kerja paruh waktu? | Restoran | *Minimarket dekat stasiun | Hotel
+q: Siapa yang mengajari penulis? | Teman | *Manajer toko | Pelanggan
+q: Apa yang ingin dibeli dengan uang hasil kerjanya? | Kamera | Ponsel | *Sepeda baru
+
+## s4-02 | 4 | おまつりに いこう | Ayo ke festival
+@A {週末|しゅうまつ}、 {一緒|いっしょ} +に お{祭|まつ}り +に {行|い}かない？ || A: Akhir pekan ini, mau pergi ke festival bersama?
+@B いい +ね！ {行|い}きたい。 {何時|なんじ} +から？ || B: Boleh! Aku mau. Mulai jam berapa?
+@A {夕方|ゆうがた} {六時|ろくじ} +から +だ +よ。 {浴衣|ゆかた} +を {着|き}て {行|い}こう +よ。 || A: Mulai jam enam sore. Ayo pergi pakai yukata.
+@B {浴衣|ゆかた} +を {着|き}た こと +が ない +けど、 {大丈夫|だいじょうぶ}？ || B: Aku belum pernah pakai yukata, tidak apa-apa?
+@A {大丈夫|だいじょうぶ}。 {私|わたし} +が {手伝|てつだ}って あげる +よ。 || A: Tidak apa-apa. Nanti aku bantu.
+@B ありがとう。 お{祭|まつ}り +で {何|なに} +を する +の？ || B: Terima kasih. Di festival kita ngapain?
+@A {屋台|やたい} +で {焼|や}きそば +を {食|た}べたり、 {花火|はなび} +を {見|み}たり する +よ。 || A: Makan yakisoba di kios, menonton kembang api, dan lain-lain.
+@B {楽|たの}しそう！ {雨|あめ} +が {降|ふ}らなければ いい +ね。 || B: Kedengarannya seru! Semoga tidak hujan, ya.
+q: Festival mulai jam berapa? | Jam 5 sore | *Jam 6 sore | Jam 7 malam
+q: Apa yang akan mereka pakai? | Jas | *Yukata | Seragam sekolah
+q: Apa yang diharapkan B di akhir percakapan? | Tidak terlambat | *Tidak hujan | Dapat hadiah

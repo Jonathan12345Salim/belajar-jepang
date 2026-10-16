@@ -1,0 +1,3 @@
+# Urutan & kelompok pelajaran kanji. Format: level|kelompok1 kelompok2 ...
+# Level tanpa baris di sini diurutkan otomatis berdasarkan frekuensi pemakaian.
+5|一二三四五 六七八九十 百千万円 日月火水 木金土 山川天気雨 人子女男 父母友 上下中 右左外 東西南北 大小長高白 年時間今 毎午前後半 先学校生 名本語国 行来出入 見聞読書 話食休 何車電

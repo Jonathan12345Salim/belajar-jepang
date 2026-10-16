@@ -1,0 +1,70 @@
+# Radikal / komponen kanji yang sering muncul.
+# Format: radikal|arti Indonesia|arti Inggris|contoh kanji
+亻|orang (di samping)|person|休体作住
+人|orang|person|今会金
+口|mulut|mouth|右名話
+日|matahari; hari|sun; day|時明曜
+月|bulan; daging (tubuh)|moon; flesh|朝服前
+木|pohon|tree|校林本
+氵|air|water|海洗泳
+扌|tangan|hand|持押払
+言|kata-kata|words|語話読
+女|perempuan|woman|好妹姉
+子|anak|child|学字好
+宀|atap|roof|家字室安
+艹|rumput|grass|花茶草薬
+門|gerbang|gate|間聞開閉
+辶|jalan; bergerak|walk; movement|近道週送
+糸|benang|thread|紙終絵組
+金|logam; emas|metal; gold|銀鉄
+食|makan|eat|飲飯館
+心|hati|heart|思意悪
+忄|hati (di samping)|heart|忙情慣
+目|mata|eye|見眠
+耳|telinga|ear|聞取
+田|sawah|rice field|男町画
+力|tenaga|power|男動勉
+土|tanah|earth|地場堂
+火|api|fire|灯焼
+灬|api (di bawah)|fire|点熱黒
+雨|hujan|rain|電雪
+車|kendaraan|vehicle|転軽
+貝|kerang; uang|shell; money|買貸費
+刂|pisau|knife|前別利
+彳|langkah|step|行後待
+疒|penyakit|sickness|病痛
+广|bangunan beratap miring|building|店広度庭
+囗|kurungan; batas|enclosure|国図回
+攵|memukul; tindakan|strike; action|教数放
+石|batu|stone|研確
+禾|padi|grain|秋科私
+竹|bambu|bamboo|答箱
+礻|altar; dewa|altar; god|社神礼
+阝|bukit; kota|hill; town|院部都
+王|raja; permata|king; jewel|理現球
+大|besar|big|天太
+山|gunung|mountain|島岩
+犭|hewan buas|beast|猫独
+馬|kuda|horse|駅験
+魚|ikan|fish|鮮
+鳥|burung|bird|鳴
+足|kaki|foot|路
+走|berlari|run|起越
+立|berdiri|stand|音新親
+見|melihat|see|親観
+頁|kepala; halaman|head; page|題顔頭
+儿|kaki manusia|legs|先見元
+亠|topi; penutup|lid|京夜
+寸|ukuran; inci|measure|寺対
+欠|menguap; kurang|yawn; lack|歌次
+止|berhenti|stop|正歩
+戸|pintu|door|所戻
+方|arah|direction|族旅
+白|putih|white|百的
+米|beras|rice|料数
+羊|domba|sheep|美洋
+工|pekerjaan; kerajinan|craft|左空
+弓|busur|bow|強引
+夕|sore|evening|名外夜
+巾|kain|cloth|帰市席
+衣|pakaian|clothing|表
