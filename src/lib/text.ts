@@ -44,19 +44,51 @@ const SPECIAL_RO: Record<string, string> = {
   へは: 'ewa',
   こんにちは: 'konnichiwa',
   こんばんは: 'konbanwa',
+  への: 'e no',
+  へと: 'e to',
+  または: 'mata wa',
+  あるいは: 'arui wa',
+  もしくは: 'moshiku wa',
+  それでは: 'sore dewa',
+  ではない: 'dewa nai',
+  ならでは: 'naradewa',
 };
+
+const RO_PUNCT: Record<string, string> = {
+  '「': '"',
+  '」': '"',
+  '『': '"',
+  '』': '"',
+  '（': '(',
+  '）': ')',
+  '、': ',',
+  '。': '.',
+  '！': '!',
+  '？': '?',
+  '…': '...',
+  '─': '-',
+  '・': ' ',
+};
+const roPunct = (s: string) =>
+  Array.from(s)
+    .map((c) => RO_PUNCT[c] ?? c)
+    .join('')
+    .replace(/\.{4,}/g, '...')
+    .replace(/-{2,}/g, ' -');
 
 /** Romaji untuk satu kata/token (dalam kana). */
 export function romaji(kana: string): string {
-  const m = kana.match(/^(.*?)([、。！？!?,.\s]*)$/);
-  const core = m ? m[1] : kana;
-  const punct = m ? m[2] : '';
+  // tanda kutip/kurung di depan & tanda baca di belakang dipisahkan dari kata
+  const m = kana.match(/^([「『（\s]*)(.*?)([、。！？!?,.」』）…─\s]*)$/);
+  const lead = m ? m[1] : '';
+  const core = m ? m[2] : kana;
+  const tail = m ? m[3] : '';
   let r = SPECIAL_RO[core];
   if (r === undefined) {
     const hon = core.length > 2 ? core.match(/^(.+?)(さん|ちゃん|くん|さま)$/) : null;
     r = hon ? `${toRomaji(hon[1])}-${toRomaji(hon[2])}` : toRomaji(core);
   }
-  return r + toRomaji(punct).replace(/\s/g, '');
+  return roPunct(lead).replace(/\s/g, '') + r + roPunct(tail).replace(/\s/g, '');
 }
 
 export function sentRomaji(toks: string[]): string {

@@ -22,6 +22,7 @@ export interface Settings {
   dailyGoal: number;
   unlockAll: boolean;
   batch: number;
+  autoUpdate: boolean;
 }
 
 export interface DayStat {
@@ -56,6 +57,7 @@ export const DEFAULT_SETTINGS: Settings = {
   dailyGoal: 30,
   unlockAll: false,
   batch: 25,
+  autoUpdate: true,
 };
 
 const KEY = 'belajar-jepang-v1';

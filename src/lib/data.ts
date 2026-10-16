@@ -20,8 +20,15 @@ export interface DB {
 let dbPromise: Promise<DB> | null = null;
 let dbValue: DB | null = null;
 
+// Vite menyalin file data ke assets/ dengan nama ber-hash (mis. stories-AbC123.json).
+// Setiap kali isi data berubah, namanya ikut berubah, jadi versi web yang baru
+// tidak pernah tercampur dengan data lama yang masih tersimpan di cache offline.
+const DATA_URLS = import.meta.glob('../data/*.json', { query: '?url', import: 'default', eager: true }) as Record<string, string>;
+
 async function getJSON<T>(name: string): Promise<T> {
-  const res = await fetch(`./data/${name}`);
+  const url = DATA_URLS[`../data/${name}`];
+  if (!url) throw new Error(`File data tidak dikenal: ${name}`);
+  const res = await fetch(url);
   if (!res.ok) throw new Error(`Gagal memuat ${name}`);
   return res.json() as Promise<T>;
 }

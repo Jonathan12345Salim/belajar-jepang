@@ -1,17 +1,30 @@
+import { useState } from 'react';
 import { db } from '../lib/data';
 import { isNative } from '../lib/tts';
 import { LEVELS } from '../lib/types';
-import { Header } from '../components/ui';
-
-const APP_VERSION: string = import.meta.env.VITE_APP_VERSION ?? 'dev';
-const WEB_URL = 'https://jonathan12345salim.github.io/belajar-jepang/';
-const APK_URL = 'https://github.com/Jonathan12345Salim/belajar-jepang/releases/latest';
+import { APP_VERSION, RELEASES_URL as APK_URL, WEB_URL, checkUpdate } from '../lib/update';
+import { Header, UpdateBanner, toast } from '../components/ui';
 
 export function About() {
   const d = db();
+  const [busy, setBusy] = useState(false);
+  const check = async () => {
+    setBusy(true);
+    const r = await checkUpdate(true);
+    setBusy(false);
+    const msg: Record<string, string> = {
+      new: 'Ada versi baru! Lihat pemberitahuan di atas.',
+      latest: 'Kamu sudah memakai versi terbaru ✓',
+      offline: 'Tidak bisa memeriksa. Pastikan ada internet.',
+      dev: 'Ini versi pengembangan (tanpa nomor versi).',
+      skip: '',
+    };
+    toast(msg[r]);
+  };
   return (
     <div>
       <Header title="Tentang aplikasi" />
+      <UpdateBanner />
       <div className="card">
         <h3>Belajar Jepang</h3>
         <p className="muted" style={{ marginTop: 0 }}>
@@ -27,6 +40,9 @@ export function About() {
           <a className="btn sm sec" href={APK_URL} target="_blank" rel="noopener noreferrer">
             📲 Unduh APK
           </a>
+          <button className="btn sm ghost" disabled={busy} onClick={check}>
+            {busy ? 'Memeriksa…' : '🔄 Cek pembaruan'}
+          </button>
         </div>
         <table className="small" style={{ width: '100%', borderCollapse: 'collapse' }}>
           <thead>
@@ -35,6 +51,7 @@ export function About() {
               <th>Kanji</th>
               <th>Kosakata</th>
               <th>Tata bahasa</th>
+              <th>Cerita</th>
             </tr>
           </thead>
           <tbody>
@@ -44,6 +61,7 @@ export function About() {
                 <td className="center">{d.kanji.filter((k) => k.lv === lv).length}</td>
                 <td className="center">{d.vocab.filter((v) => v.lv === lv).length}</td>
                 <td className="center">{d.grammar.filter((g) => g.lv === lv).length || '-'}</td>
+                <td className="center">{d.stories.filter((s) => s.lv === lv).length || '-'}</td>
               </tr>
             ))}
           </tbody>

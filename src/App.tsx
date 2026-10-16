@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { loadDB } from './lib/data';
 import { applySystemBars, initBackButton } from './lib/native';
+import { initUpdateChecks } from './lib/update';
 import { useRoute } from './lib/router';
 import { dueIds, useProgress } from './lib/store';
 import { cls } from './lib/util';
@@ -51,6 +52,7 @@ export default function App() {
 
   useEffect(() => {
     initBackButton();
+    initUpdateChecks();
     loadDB()
       .then(() => setReady(true))
       .catch((e) => setErr(String(e)));
@@ -95,7 +97,7 @@ export default function App() {
       screen = <PracticeRouter key={route.raw} method={r1} q={route.q} />;
       break;
     case 'stories':
-      screen = <StoryList />;
+      screen = <StoryList tab={route.q.get('t') === 'panjang' ? 'panjang' : 'pendek'} />;
       break;
     case 'story':
       screen = <StoryReader key={r1} id={r1} />;

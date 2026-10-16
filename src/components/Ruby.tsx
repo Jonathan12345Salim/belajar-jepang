@@ -54,6 +54,16 @@ export function AudioBtn({ text, slow, label }: { text: string; slow?: boolean; 
   );
 }
 
+/** Kelompokkan indeks token: token "+"/"~" ikut kelompok token sebelumnya. */
+function groups(toks: string[]): number[][] {
+  const out: number[][] = [];
+  toks.forEach((t, i) => {
+    if (i > 0 && isAttached(t) && out.length) out[out.length - 1].push(i);
+    else out.push([i]);
+  });
+  return out;
+}
+
 /** Kalimat bertoken: spasi antar kata, kotak kosong, romaji, terjemahan. */
 export function Sentence({
   toks,
@@ -80,23 +90,26 @@ export function Sentence({
   const showRo = romaji ?? s.romaji;
   return (
     <div className={className}>
-      <div className={cls('sentence', s.spacing && 'spaced')} lang="ja">
+      <div className="sentence" lang="ja">
         {speaker && <span className="speaker">{speaker}</span>}
-        {toks.map((t, i) => {
-          const gap = i > 0 && !isAttached(t);
-          if (i === blank) {
-            return (
-              <span key={i} className={cls('tok', gap && 'gap')}>
-                <span className={cls('blank', fillState && `filled-${fillState}`)}>{fill ? <Ruby text={fill} /> : '\u00a0'}</span>
-              </span>
-            );
-          }
-          return (
-            <span key={i} className={cls('tok', gap && 'gap')}>
-              <Ruby text={tokText(t)} />
+        {groups(toks).map((g, gi) => (
+          <Fragment key={gi}>
+            {/* spasi biasa (bukan margin) supaya hilang sendiri di awal baris baru */}
+            {gi > 0 && s.spacing ? ' ' : null}
+            {/* kata + partikel yang menempel = satu blok, tidak terpotong saat pindah baris */}
+            <span className="tok">
+              {g.map((i) =>
+                i === blank ? (
+                  <span key={i} className={cls('blank', fillState && `filled-${fillState}`)}>
+                    {fill ? <Ruby text={fill} /> : '\u00a0'}
+                  </span>
+                ) : (
+                  <Ruby key={i} text={tokText(toks[i])} />
+                ),
+              )}
             </span>
-          );
-        })}
+          </Fragment>
+        ))}
       </div>
       {showRo && blank === undefined && <div className="romaji">{sentRomaji(toks)}</div>}
       {tr && showTr && <div className="trans">{tr}</div>}

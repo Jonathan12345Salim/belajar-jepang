@@ -56,7 +56,7 @@ export function PathScreen({ open }: { open?: string }) {
                   return (
                     <button key={l.id} className={cls('lesson', d && 'done', isNext && 'next', !un && 'locked')} onClick={() => openLesson(l)}>
                       <span className="dot jp" lang="ja">
-                        {d ? '✓' : !un ? '🔒' : ICON[l.kind] ?? TYPE_ICON[l.type ?? ''] ?? '•'}
+                        {d ? '✓' : !un ? '🔒' : l.long ? '📚' : ICON[l.kind] ?? TYPE_ICON[l.type ?? ''] ?? '•'}
                       </span>
                       <span className="grow">
                         <div className="t" style={{ fontWeight: 600 }}>

@@ -4,7 +4,7 @@ import type { Progress } from './store';
 import type { ItemType, Level, Vocab } from './types';
 import { LEVELS } from './types';
 import { chunk } from './util';
-import { hasKanji, kanjiIn } from './text';
+import { hasKanji, kanjiIn, plain } from './text';
 
 export interface Lesson {
   id: string;
@@ -15,6 +15,7 @@ export interface Lesson {
   sub?: string;
   items: string[];
   ref?: string;
+  long?: boolean; // cerita panjang
   index: number; // posisi global
 }
 
@@ -188,10 +189,13 @@ function levelStage(db: DB, lv: Level, kanjiPos: Map<string, number>, posRange: 
       sub: gs.map((g) => g.m).join(' · '),
     }),
   );
-  // --- cerita
+  // --- cerita (pendek disebar merata; panjang di paruh akhir level)
   const sL = db.stories
-    .filter((s) => s.lv === lv)
-    .map((s) => L(st, 'story', `story-${s.id}`, `Baca cerita: ${s.ti}`, [], { ref: s.id, sub: s.t }));
+    .filter((s) => s.lv === lv && !s.pl)
+    .map((s) => L(st, 'story', `story-${s.id}`, `Baca cerita: ${s.ti}`, [], { ref: s.id, sub: plain(s.t) }));
+  const longL = db.stories
+    .filter((s) => s.lv === lv && s.pl)
+    .map((s) => L(st, 'story', `story-${s.id}`, `Cerita panjang: ${s.ti}`, [], { ref: s.id, sub: plain(s.t), long: true }));
 
   const main = interleave([gL, kL, vL]);
   // sisipkan cerita merata
@@ -203,6 +207,12 @@ function levelStage(db: DB, lv: Level, kanjiPos: Map<string, number>, posRange: 
     while (si < sL.length && i + 1 >= Math.round(step * (si + 1))) out.push(sL[si++]);
   });
   while (si < sL.length) out.push(sL[si++]);
+  // cerita panjang: posisi 75% dan menjelang ujian (untuk 2 cerita)
+  const base = out.length;
+  longL.forEach((l, k) => {
+    const frac = 0.5 + (0.5 * (k + 1)) / longL.length;
+    out.splice(Math.round(base * frac) + k, 0, l);
+  });
   const lessons = [
     ...(lv === 5 ? [L(st, 'info', 'info-kanji', 'Mengenal kanji', [], { ref: 'kanji' })] : []),
     ...out,

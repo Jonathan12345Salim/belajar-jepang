@@ -5,7 +5,7 @@ import { enc, go } from '../lib/router';
 import { dueIds, nextDue, streak, today, update, useProgress } from '../lib/store';
 import { isNative, japaneseVoiceAvailable, openVoiceInstall, VOICE_HELP } from '../lib/tts';
 import { fmtWait } from '../lib/util';
-import { Bar } from '../components/ui';
+import { Bar, UpdateBanner } from '../components/ui';
 
 function greeting() {
   const h = new Date().getHours();
@@ -95,6 +95,8 @@ export function Home() {
         <Bar value={t.xp} max={p.settings.dailyGoal} />
       </div>
 
+      <UpdateBanner />
+
       {!voiceOk && (
         <div className="card flat note-box" style={{ margin: '0 14px 12px' }}>
           🔇 Suara bahasa Jepang belum tersedia di perangkat ini.
@@ -158,10 +160,10 @@ export function Home() {
           <b>Menulis</b>
           <small>Latih urutan goresan</small>
         </button>
-        <button className="tile" onClick={() => go('stories')}>
-          <span className="ic">📖</span>
+        <button className="tile" onClick={() => go('stories?t=panjang')}>
+          <span className="ic">📚</span>
           <b>Cerita</b>
-          <small>Membaca & mendengar</small>
+          <small>Pendek & panjang, N5–N1</small>
         </button>
       </div>
     </div>

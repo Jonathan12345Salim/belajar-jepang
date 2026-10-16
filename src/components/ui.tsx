@@ -1,5 +1,6 @@
 import { useEffect, useState, type ReactNode } from 'react';
 import { back } from '../lib/router';
+import { dismissUpdate, isNativeApp, useUpdate } from '../lib/update';
 import { cls } from '../lib/util';
 
 export function Header({ title, onBack, right, noBack }: { title: ReactNode; onBack?: () => void; right?: ReactNode; noBack?: boolean }) {
@@ -60,6 +61,44 @@ export function ToastHost() {
     return () => clearTimeout(t);
   }, [msg]);
   return msg ? <div className="toast">{msg}</div> : null;
+}
+
+/** Pemberitahuan versi baru. Web: cukup muat ulang. APK: unduh & pasang di atas versi lama. */
+export function UpdateBanner() {
+  const up = useUpdate();
+  if (!up) return null;
+  return (
+    <div className="card flat note-box" style={{ margin: '0 14px 12px' }}>
+      <b>🎉 Versi baru {up.version} sudah tersedia!</b>
+      {isNativeApp ? (
+        <>
+          <div className="small mt">
+            Unduh APK-nya, lalu pasang <b>langsung di atas</b> aplikasi ini (jangan hapus aplikasi lama). Progres belajarmu tetap aman.
+          </div>
+          <div className="row wrap mt">
+            <a className="btn sm" href={up.apk} target="_blank" rel="noopener noreferrer">
+              📥 Unduh APK
+            </a>
+            <button className="btn sm ghost" onClick={dismissUpdate}>
+              Nanti
+            </button>
+          </div>
+        </>
+      ) : (
+        <>
+          <div className="small mt">Muat ulang halaman untuk memakai versi terbaru. Progres belajarmu tetap aman.</div>
+          <div className="row wrap mt">
+            <button className="btn sm" onClick={() => location.reload()}>
+              🔄 Muat ulang sekarang
+            </button>
+            <button className="btn sm ghost" onClick={dismissUpdate}>
+              Nanti
+            </button>
+          </div>
+        </>
+      )}
+    </div>
+  );
 }
 
 export function Empty({ icon, title, children }: { icon: string; title: string; children?: ReactNode }) {

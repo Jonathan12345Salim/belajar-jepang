@@ -50,15 +50,17 @@ export interface StorySentence {
   t: string[];
   id: string;
   sp?: string;
+  pb?: number; // 1 = awal paragraf baru
 }
 
 export interface Story {
   id: string;
   lv: Level;
-  t: string;
+  t: string; // judul Jepang (boleh berisi furigana {漢字|かな})
   ti: string;
   s: StorySentence[];
   q: { q: string; o: string[]; a: number }[];
+  pl?: number; // 1 = cerita panjang
 }
 
 export interface Radical {

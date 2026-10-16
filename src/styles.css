@@ -538,13 +538,13 @@ textarea.field:focus {
   line-height: 1.85;
 }
 
+/* satu token (kata + partikel) tidak dipotong di tengah saat pindah baris */
 .sentence .tok {
-  display: inline;
+  display: inline-block;
+  max-width: 100%;
 }
 
-.sentence.spaced .tok.gap {
-  margin-left: 0.34em;
-}
+
 
 .blank {
   display: inline-block;

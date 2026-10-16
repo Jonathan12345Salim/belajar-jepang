@@ -93,6 +93,9 @@ export function SettingsScreen() {
         <Row title="Buka semua pelajaran" sub="Untuk yang sudah bisa sebagian materi (misalnya hiragana). Pelajaran tidak perlu berurutan.">
           <Toggle on={s.unlockAll} onChange={(v) => setSetting('unlockAll', v)} />
         </Row>
+        <Row title="Cek pembaruan otomatis" sub="Saat ada internet, aplikasi memeriksa apakah ada versi baru (hanya file kecil berisi nomor versi). Belajar tetap bisa offline.">
+          <Toggle on={s.autoUpdate} onChange={(v) => setSetting('autoUpdate', v)} />
+        </Row>
       </div>
 
       <h2 className="sec">Suara</h2>

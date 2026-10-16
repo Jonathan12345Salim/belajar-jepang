@@ -11,3 +11,9 @@
 - Fitur khusus Android (getaran, share, tombol kembali, pemasangan suara) harus punya cadangan di web.
   Fitur khusus web (service worker untuk offline) tidak boleh aktif di APK.
 - Branch `gh-pages` hanya berisi hasil build otomatis. Jangan mengeditnya manual.
+- Nomor versi build = `VITE_APP_VERSION` (1.0.<nomor run>). `scripts/gen-sw.mjs` menulis `version.json` di web;
+  APK membaca file itu untuk memberi tahu pengguna bila ada versi baru. Jangan hapus atau ganti nama file ini.
+- File data dimuat lewat `import.meta.glob` (nama ber-hash). Jangan kembalikan data ke `public/`, supaya web yang
+  diperbarui tidak memakai data lama dari cache offline.
+- Saat menjelaskan pembaruan ke pengguna: APK dipasang langsung di atas versi lama (jangan uninstall, progres ikut
+  terhapus); web memperbarui sendiri saat dibuka dengan internet.

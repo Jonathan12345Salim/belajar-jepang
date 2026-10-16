@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Membangun file data aplikasi (public/data/*.json).
+"""Membangun file data aplikasi (src/data/*.json).
 
 Sumber data terbuka (diunduh otomatis ke scripts/.cache/):
   - KANJIDIC2 (EDRDG, CC BY-SA 4.0) melalui davidluzgouveia/kanji-data (MIT):
@@ -20,7 +20,8 @@ import xml.etree.ElementTree as ET
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CACHE = os.path.join(ROOT, 'scripts', '.cache')
-OUT = os.path.join(ROOT, 'public', 'data')
+# Data diimpor oleh src/lib/data.ts (Vite memberi nama file ber-hash agar pembaruan web tidak tercampur cache lama)
+OUT = os.path.join(ROOT, 'src', 'data')
 CONTENT = os.path.join(ROOT, 'content')
 
 KD = 'https://raw.githubusercontent.com/davidluzgouveia/kanji-data/00fd7079c3890f430759536f91aa5e854ec0ca4f/kanji.json'
@@ -274,29 +275,56 @@ def build_grammar():
 
 # ---------------------------------------------------------------- Cerita
 def build_stories():
+    """Cerita pendek (cerita.txt) + cerita panjang (cerita_panjang.txt, ditandai pl=1).
+    Baris "--" di cerita panjang = awal paragraf baru (kalimat berikutnya diberi pb=1)."""
     items = []
-    cur = None
-    for ln in read_lines('cerita.txt'):
-        s = ln.strip()
-        if not s or (s.startswith('#') and not s.startswith('## ')):
-            continue
-        if s.startswith('## '):
-            sid, lv, title, title_id = [p.strip() for p in s[3:].split('|')]
-            cur = {'id': sid, 'lv': int(lv), 't': title, 'ti': title_id, 's': [], 'q': []}
-            items.append(cur)
-        elif s.startswith('q:'):
-            parts = [p.strip() for p in s[2:].split('|')]
-            opts = [p.lstrip('*') for p in parts[1:]]
-            ans = [i for i, p in enumerate(parts[1:]) if p.startswith('*')][0]
-            cur['q'].append({'q': parts[0], 'o': opts, 'a': ans})
-        else:
-            jp, tr = [p.strip() for p in s.split('||')]
-            toks = jp.split()
-            sent = {'t': toks, 'id': tr}
-            if toks and toks[0].startswith('@'):
-                sent['sp'] = toks[0][1:]
-                sent['t'] = toks[1:]
-            cur['s'].append(sent)
+    seen = set()
+    for name, long in (('cerita.txt', False), ('cerita_panjang.txt', True)):
+        cur = None
+        new_par = False
+        for no, ln in enumerate(read_lines(name), 1):
+            s = ln.strip()
+            if not s or (s.startswith('#') and not s.startswith('## ')):
+                continue
+            where = f'{name}:{no}'
+            if s.startswith('## '):
+                # pisahkan dengan " | " (tanda | di dalam furigana {漢字|かな} tidak berspasi)
+                parts = [p.strip() for p in s[3:].split(' | ')]
+                if len(parts) != 4:
+                    raise ValueError(f'{where}: judul cerita harus 4 bagian: {s}')
+                sid, lv, title, title_id = parts
+                if sid in seen:
+                    raise ValueError(f'{where}: id cerita ganda {sid}')
+                seen.add(sid)
+                cur = {'id': sid, 'lv': int(lv), 't': title, 'ti': title_id, 's': [], 'q': []}
+                if long:
+                    cur['pl'] = 1
+                items.append(cur)
+                new_par = False
+            elif s == '--':
+                new_par = True
+            elif s.startswith('q:'):
+                parts = [p.strip() for p in s[2:].split('|')]
+                opts = [p.lstrip('*') for p in parts[1:]]
+                ans = [i for i, p in enumerate(parts[1:]) if p.startswith('*')]
+                if len(ans) != 1 or len(opts) < 2:
+                    raise ValueError(f'{where}: soal harus punya tepat satu jawaban benar (*): {s}')
+                cur['q'].append({'q': parts[0], 'o': opts, 'a': ans[0]})
+            else:
+                if '||' not in s:
+                    raise ValueError(f'{where}: kalimat tanpa terjemahan (||): {s}')
+                jp, tr = [p.strip() for p in s.split('||', 1)]
+                toks = jp.split()
+                if jp.count('{') != jp.count('}'):
+                    raise ValueError(f'{where}: kurung furigana tidak seimbang: {jp}')
+                sent = {'t': toks, 'id': tr}
+                if toks and toks[0].startswith('@'):
+                    sent['sp'] = toks[0][1:]
+                    sent['t'] = toks[1:]
+                if new_par and cur['s']:
+                    sent['pb'] = 1
+                new_par = False
+                cur['s'].append(sent)
     return items
 
 
@@ -353,7 +381,8 @@ def main():
         'vocab': sum(1 for v in vocab if v['lv'] == lv),
         'vocab_id': sum(1 for v in vocab if v['lv'] == lv and 'id' in v),
         'grammar': sum(1 for g in grammar if g['lv'] == lv),
-        'stories': sum(1 for s in stories if s['lv'] == lv),
+        'stories': sum(1 for s in stories if s['lv'] == lv and not s.get('pl')),
+        'stories_long': sum(1 for s in stories if s['lv'] == lv and s.get('pl')),
     } for lv in LEVELS}
     write('kanji-groups.json', kanji_groups)
     write('meta.json', stats)
